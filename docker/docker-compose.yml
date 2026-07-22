@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: calluser
+      POSTGRES_PASSWORD: callpassword
+      POSTGRES_DB: callcenter
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U calluser -d callcenter"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - callcenter-network
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - callcenter-network
+
+  n8n:
+    image: n8nio/n8n:latest
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      N8N_BASIC_AUTH_ACTIVE: "true"
+      N8N_BASIC_AUTH_USER: n8n
+      N8N_BASIC_AUTH_PASSWORD: n8npassword
+    volumes:
+      - n8n-data:/home/node/.n8n
+    networks:
+      - callcenter-network
+
+volumes:
+  postgres-data:
+  redis-data:
+  n8n-data:
+
+networks:
+  callcenter-network:
+    driver: bridge

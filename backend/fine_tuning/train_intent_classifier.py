@@ -94,7 +94,7 @@ def load_jsonl_records(data_path: Path) -> list[dict[str, str]]:
 
 
 def tokenize_dataset(dataset: Dataset, tokenizer: DistilBertTokenizerFast) -> tuple[list[list[int]], list[list[int]], list[int]]:
-    texts = dataset["text"]
+    texts = list(dataset["text"])
     labels = [LABEL2ID[label] for label in dataset["label"]]
     encodings = tokenizer(
         texts,
@@ -210,7 +210,7 @@ def main() -> None:
         per_device_eval_batch_size=args.batch_size,
         learning_rate=2e-5,
         weight_decay=0.01,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="f1",
@@ -224,7 +224,7 @@ def main() -> None:
         args=training_args,
         train_dataset=train_torch_dataset,
         eval_dataset=val_torch_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         compute_metrics=compute_metrics,
     )
 

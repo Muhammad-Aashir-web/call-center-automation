@@ -1,0 +1,640 @@
+{"text": "I think my account's been taken over, I just got an email saying my password's been changed, but I didn't change it", "label": "fraud_report"}
+{"text": "I wanna switch to a cheaper plan, but I'm not sure if that's gonna, you know, affect my service or anything", "label": "cancel_service"}
+{"text": "I'm trying to find out if you offer, you know, like a loyalty program or something", "label": "general_inquiry"}
+{"text": "I'm looking for a, you know, fun and, like, unique experience and I was wondering if you guys have any, uh, in-store events or workshops", "label": "general_inquiry"}
+{"text": "Can you tell me what the process is for canceling my service, I've been looking at my budget and I think it's time for me to make some changes", "label": "cancel_service"}
+{"text": "I'm kinda looking to upgrade my phone, do you have any new models that just came out?", "label": "sales_inquiry"}
+{"text": "So I'm interested in learning more about your company's, like, newest technology and innovations, can you send me some info or something?", "label": "sales_inquiry"}
+{"text": "I need to update my payment method, can I do that online or do I need to call you guys to do it?", "label": "billing_inquiry"}
+{"text": "Can you tell me about your, like, product sourcing, do you guys use, uh, local suppliers or something", "label": "general_inquiry"}
+{"text": "Can you help me cancel my service and transfer my number to a different provider, I'd appreciate it", "label": "cancel_service"}
+{"text": "Hey, I saw an ad for a free trial of your new service, can you give me more details on that?", "label": "sales_inquiry"}
+{"text": "I need to get a new laptop for work, do you have any deals on your latest models?", "label": "sales_inquiry"}
+{"text": "I was talkin to my friend and they're havin the same issue, so I'm thinkin it might be a bigger deal", "label": "service_outage_status"}
+{"text": "I'm trying to find out, like, what sets you guys apart from, uh, other stores, what's your, you know, unique selling point", "label": "general_inquiry"}
+{"text": "I need to cancel my service ASAP, I'm moving out of the country and I wont be able to use it anymore, can you help me with that?", "label": "cancel_service"}
+{"text": "I think I might've missed a payment or something, can you tell me if I'm up to date on my bills?", "label": "billing_inquiry"}
+{"text": "Uh, hi, I think someone's been accessing my account without my permission, I've been getting all these weird emails", "label": "fraud_report"}
+{"text": "I was wonderin if you guys could give me some info on the outage, like, you know, what's causin it and when it'll be fixed, thats all I'm really lookin for", "label": "service_outage_status"}
+{"text": "I was just callin to see if, uh, you're aware of any outages in my area, I got no service", "label": "service_outage_status"}
+{"text": "Um, I think there might be an error on my invoice, it says I owe $100, but I could've sworn I already paid that", "label": "billing_inquiry"}
+{"text": "I was told to call and ask about the outage, so yeah, can you tell me whats goin on", "label": "service_outage_status"}
+{"text": "I've been getting all these weird emails about my account being compromised, but I don't know if they're legit", "label": "fraud_report"}
+{"text": "I think someone's been using my account without my permission, I just got a notification about a purchase I didn't make", "label": "fraud_report"}
+{"text": "I'm pretty sure its not just my area, I've seen people from other areas postin about it on social media, so I'm thinkin it might be a, you know, a bigger deal", "label": "service_outage_status"}
+{"text": "I've been having some issues with my service and I'm just gonna cancel it, I dont think it's worth the hassle", "label": "cancel_service"}
+{"text": "I was wondering if you guys have any, like, tours or, you know, behind-the-scenes experiences that I can book?", "label": "general_inquiry"}
+{"text": "I just realized that someone changed my account settings, like, my address and phone number, and I didn't authorize any of those changes", "label": "fraud_report"}
+{"text": "Hey, I saw your new product launch on social media, can I get more info on that?", "label": "sales_inquiry"}
+{"text": "Do you have any, uh, student discounts or, like, promotions for, you know, students and teachers?", "label": "general_inquiry"}
+{"text": "I'm trying to, you know, update my info on my account but the website's not cooperating, can you walk me through it?", "label": "account_management"}
+{"text": "I'm trying to find out if you guys have any, uh, phone charging stations or something, my phone's dying", "label": "general_inquiry"}
+{"text": "I wanna know more about your, uh, premium services, how do they, you know, differ from the standard ones?", "label": "sales_inquiry"}
+{"text": "I've been checkin social media and everybody's sayin their service is out, is it a, uh, a bigger deal or just my area", "label": "service_outage_status"}
+{"text": "I need to update my account info because I just got a new job and my email address is changing, can you help me with that?", "label": "account_management"}
+{"text": "I think I've been scammed, someone contacted me saying they were from your security team and they needed me to verify my account info, but it sounded really fishy", "label": "fraud_report"}
+{"text": "I was just talkin to my neighbor and they're havin the same issue, so I'm thinkin it might be a, you know, a neighborhood thing", "label": "service_outage_status"}
+{"text": "I wanna, like, change my plan to the one with more features, can you tell me what the differences are and, like, how much it'll cost?", "label": "account_management"}
+{"text": "Um, I think I might've downloaded some kinda virus or somethin, cuz my phone's been actin really weird, it's just really slow and stuff", "label": "technical_support"}
+{"text": "I'm trying to, you know, simplify my life and canceling my service is one of the things I'm considering, can you help me?", "label": "cancel_service"}
+{"text": "I need to report a fraud, I just saw a charge on my account for, like, a thousand dollars, and I definitely didn't make that purchase", "label": "fraud_report"}
+{"text": "Do you have any, uh, partnerships with other companies, like can I use my rewards card or something at your store?", "label": "general_inquiry"}
+{"text": "I need to get a new, uh, laptop for work, can you tell me about your current lineup and any deals you have going on?", "label": "sales_inquiry"}
+{"text": "Can you help me reset my security questions, I totally forgot what they are and I'm getting locked out of my account", "label": "account_management"}
+{"text": "I'm having some trouble with my laptop, it's just not turning on and I've tried chargIN it and everythin", "label": "technical_support"}
+{"text": "I'm having some trouble logging in and I think it's because my password is, like, really old, can you help me update it?", "label": "account_management"}
+{"text": "I need to get a new phone case, can you tell me about your current selection and any available discounts?", "label": "sales_inquiry"}
+{"text": "I'm looking to, uh, reduce my monthly expenses and canceling my service is one of the options I'm considering, can you give me some info?", "label": "cancel_service"}
+{"text": "I need to change my plan to the premium one, do I have to, like, pay the difference or something?", "label": "account_management"}
+{"text": "I need to, um, update my personal info on my account, can you, like, guide me through the process?", "label": "account_management"}
+{"text": "I saw an ad for a new add-on service you're offering, can you give me more details on that?", "label": "sales_inquiry"}
+{"text": "Um, I think I might've messed up my wifi settings or somethin, cuz I'm not gettin any internet connection", "label": "technical_support"}
+{"text": "I'm planning a trip and I wanna know if you have any stores near, like, tourist areas or something", "label": "general_inquiry"}
+{"text": "I'm looking to, you know, expand my current plan, can you tell me about any add-ons or upgrades that are available?", "label": "sales_inquiry"}
+{"text": "Um, so I was looking at my payment history and I saw this one charge that doesn't make sense to me", "label": "billing_inquiry"}
+{"text": "So, I'm tryin to connect my phone to my wifi network, but it's not workin, I've tried restartin my router and everythin", "label": "technical_support"}
+{"text": "I'm trying to understand my billing cycle, is it based on when I signed up for the service or what?", "label": "billing_inquiry"}
+{"text": "How come my bill is always so much higher than my neighbor's, we have the same service", "label": "billing_inquiry"}
+{"text": "I think someone's trying to scam me, they've been sending me emails saying my account's been compromised, but I think it's just a phishing thing", "label": "fraud_report"}
+{"text": "I'm gettin a little worried, I need to know if theres a, uh, a company-wide outage or if its just a local thing, can you tell me", "label": "service_outage_status"}
+{"text": "I'm having some trouble accessing my account and I think it's because my info is, like, really outdated, can you help me update it?", "label": "account_management"}
+{"text": "I'm calling to report some suspicious transactions, they're all from out of state and I havent traveled recently", "label": "fraud_report"}
+{"text": "Uh, hi, I'm calling about some weird charges on my statement, like, three of them, and I don't know what they're for", "label": "fraud_report"}
+{"text": "I've been looking at my budget and I realized I cant afford my service anymore, so I think I'm gonna have to cancel it", "label": "cancel_service"}
+{"text": "I think my account has been, like, taken over or something, I just got an email saying my address had been changed, but I didnt change it", "label": "fraud_report"}
+{"text": "Hey, I'm callin about my service, its been out for a while, can you give me an update on when it'll be back up and runnin", "label": "service_outage_status"}
+{"text": "Um, I was wondering if you guys have any new services that I could, you know, add on to my existing subscription?", "label": "sales_inquiry"}
+{"text": "Can you tell me about your, like, lost and found policy, I think I, uh, left my phone at one of your stores", "label": "general_inquiry"}
+{"text": "Can you help me set up a payment plan, I'm a little short on cash this month and I don't want to get charged a late fee", "label": "billing_inquiry"}
+{"text": "I'm gettin this weird error message on my laptop, it says somethin about a driver update failin, and I'm not really sure what that means", "label": "technical_support"}
+{"text": "I just got married and I need to change my name on my account, how do I do that and is there any, like, extra paperwork I need to fill out?", "label": "account_management"}
+{"text": "Do you have any, uh, restrictions on, like, photography or videography in your stores?", "label": "general_inquiry"}
+{"text": "I'm kinda interested in checking out some new gadgets, can you tell me what's new and trending?", "label": "sales_inquiry"}
+{"text": "I need to update my payment method because my credit card got lost, can you help me add a new one to my account?", "label": "account_management"}
+{"text": "I'm thinking of canceling my service, is that something I can do over the phone?", "label": "cancel_service"}
+{"text": "Do you have any, uh, amenities for, like, parents with strollers or, you know, nursing mothers, I'm looking for a store that's, like, family-friendly", "label": "general_inquiry"}
+{"text": "I just realized that someone made a purchase on my account without my permission, and Im freaking out", "label": "fraud_report"}
+{"text": "I'm interested in learning more about your company's, like, customer support options and how they can help me", "label": "sales_inquiry"}
+{"text": "Hey, so I'm havin some issues with my service and I was wonderin if its a, you know, a bigger deal or just me", "label": "service_outage_status"}
+{"text": "Hey, so I'm experiening some service issues, is it a wider problem or just me, thats all I'm askin", "label": "service_outage_status"}
+{"text": "I think I might've been double charged this month, can you look into that for me?", "label": "billing_inquiry"}
+{"text": "I'm thinking about getting a new laptop for work, do you have any recommendations or discounts available?", "label": "sales_inquiry"}
+{"text": "I'm gettin a little frustrated, I need to know if theres a, uh, a company-wide outage or if its just a local thing, can you help me", "label": "service_outage_status"}
+{"text": "Um, so like, my phone's not chargIN properly, it's just gettin to like 80 percent and then it stops", "label": "technical_support"}
+{"text": "Can you tell me how to change my account type from personal to business, do I need to provide any extra info or anything?", "label": "account_management"}
+{"text": "How do I know if my payment went through, I didn't get a confirmation email or anything", "label": "billing_inquiry"}
+{"text": "So, I'm havin some issues with my smart tv, it's just not loadin any apps, and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "Can you help me cancel my service and get a refund for the months I've already paid for, I'd appreciate it", "label": "cancel_service"}
+{"text": "Can you help me understand why my bill is higher this quarter than it was last quarter, I didn't change any of my services", "label": "billing_inquiry"}
+{"text": "I got a notification that my payment is due soon, but I already paid it, like, last week I think", "label": "billing_inquiry"}
+{"text": "I've been thinking about downgrading to a cheaper plan, but I'm not sure if it's worth it, can you give me some info?", "label": "cancel_service"}
+{"text": "Hey, I heard about a new product launch from your company, can you give me the details on that?", "label": "sales_inquiry"}
+{"text": "Hi, I'm calling to report some suspicious activity on my account, it looks like someone's been making purchases in a different state", "label": "fraud_report"}
+{"text": "I'm having some issues with my wifi connection, it keeps dropping and I dont know whats goin on", "label": "technical_support"}
+{"text": "I'm really worried, I just got a text saying my account's been locked due to suspicious activity, but I didn't lock it, so...", "label": "fraud_report"}
+{"text": "I'd like to downgrade my plan to the basic one, I dont need all the extra features and I'm trying to save some money", "label": "cancel_service"}
+{"text": "I'm trying to report a fraud, someone's been using my credit card to make purchases online, and I don't know how they got my info", "label": "fraud_report"}
+{"text": "Can you tell me how to change my account settings so I can, like, get more storage or whatever?", "label": "account_management"}
+{"text": "I need to update my, um, credit card info on my account because it's expiring soon, can you walk me through the process?", "label": "account_management"}
+{"text": "I'm callin to see if you guys can give me an update on when the service will be back up, its been out for hours", "label": "service_outage_status"}
+{"text": "I'm really worried, I just got a message saying my account's been locked due to suspicious activity, but I didn't lock it", "label": "fraud_report"}
+{"text": "I just saw a charge on my account for a service I don't even use, and I'm pretty sure it's a scam", "label": "fraud_report"}
+{"text": "I'm trying to decide between a few different, uh, devices, can you help me compare the features and pricing?", "label": "sales_inquiry"}
+{"text": "I'm thinking of canceling my service and just using a free alternative, can you tell me about the differences between your service and the free version?", "label": "cancel_service"}
+{"text": "I'm reviewing my statement and I see a charge that's not familiar to me, can you explain what it's for?", "label": "billing_inquiry"}
+{"text": "I think I might've made a mistake when I was paying my bill last month, can you tell me if it went through or not?", "label": "billing_inquiry"}
+{"text": "I got a charge on my card that says it's from you guys, but I don't know what it's for", "label": "billing_inquiry"}
+{"text": "I'm having some issues with my login and I think it's because my password is, like, super old, so can you help me update it to something new?", "label": "account_management"}
+{"text": "So I've been with your company for a while now, and I was thinking about upgrading to a better package, what are my options?", "label": "sales_inquiry"}
+{"text": "Um, I was wondering if you guys have any, like, referral programs or discounts for customers who refer friends?", "label": "sales_inquiry"}
+{"text": "Hey, I saw this really cool new gadget on your website, can you tell me more about it, like, what it does and stuff?", "label": "sales_inquiry"}
+{"text": "Can you guys send me a breakdown of my invoice, I wanna see what I'm being charged for", "label": "billing_inquiry"}
+{"text": "I need help, I just realized that someone's been making unauthorized transactions on my account, and I don't know how to stop it", "label": "fraud_report"}
+{"text": "So, I was wonderin, is there, uh, an estimated time for when the service will be restored", "label": "service_outage_status"}
+{"text": "So, I've been looking for a way to, you know, upgrade my home entertainment system and I was wondering if you guys have any new devices or services that could help me out", "label": "sales_inquiry"}
+{"text": "Um, hi, I'm not sure if you're aware, but my service is down and I'm tryin to figure out if its just me or everybodys got the same problem", "label": "service_outage_status"}
+{"text": "I need to get a copy of my invoice from last year, can you email that to me or something?", "label": "billing_inquiry"}
+{"text": "Do you have any, uh, phone number or email that I can use to contact you guys if I have a question", "label": "general_inquiry"}
+{"text": "Hey, so I'm havin some issues with my computer, it's just not recognizes my usb drives or anythin", "label": "technical_support"}
+{"text": "I wanna cancel, like, everything, my whole account, is that doable?", "label": "cancel_service"}
+{"text": "I wanna, like, switch to the family plan, is that something I can do online or do I need to call you guys to set it up?", "label": "account_management"}
+{"text": "I was wonderin if you guys could give me some info on the outage, like, you know, what's causin it and when it'll be fixed, thats all", "label": "service_outage_status"}
+{"text": "I need to get a summary of my account activity for the past year, is that something you can provide for me?", "label": "billing_inquiry"}
+{"text": "I think I might've messed up my bluetooth settings or somethin, cuz I'm not gettin any connection", "label": "technical_support"}
+{"text": "Can you help me merge two accounts into one, I've got a personal and a business one and I just wanna have one account", "label": "account_management"}
+{"text": "Can you tell me more about the fees associated with my service, I'm trying to budget and I want to make sure I understand all the costs", "label": "billing_inquiry"}
+{"text": "I'd like to cancel my subscription, but I'm not sure if I'll be able to get a refund for the remaining months, can you tell me about your refund policy?", "label": "cancel_service"}
+{"text": "I've been noticin that my computer's been crashin a lot lately, and I'm worried it's gonna lose all my files or somethin", "label": "technical_support"}
+{"text": "I'm calling to report a scam, someone called me claiming to be from your company, and they were trying to get me to give them my account info", "label": "fraud_report"}
+{"text": "I'd like to, uh, cancel my subscription, but can I get a refund or something?", "label": "cancel_service"}
+{"text": "I'm gettin this weird pop-up on my laptop, it says somethin about a virus or somethin, and I'm not really sure what that means", "label": "technical_support"}
+{"text": "Hey, I'm experienin some kinda issue with my laptop, it's just not connectin to the internet and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "Can you walk me through the process of canceling my service, I've never done it before and I dont want to mess it up", "label": "cancel_service"}
+{"text": "I wanna downgrade to the basic plan, will that, like, cancel my subscription or just change my billing and, you know, whatnot?", "label": "account_management"}
+{"text": "I'm having some issues with my smart tv, it's not connecting to the internet and I've tried restarting it and everything", "label": "technical_support"}
+{"text": "I've been thinking about canceling my service for a while now, but I'm not sure if I'll be able to get a refund for the months I've already paid for", "label": "cancel_service"}
+{"text": "I'm having some trouble logging in and I think it's because my, uh, password is expired or something, can you help me reset it?", "label": "account_management"}
+{"text": "I, uh, I just noticed that my account balance is way lower than it should be, and I don't know what's going on", "label": "fraud_report"}
+{"text": "I'm trying to cut back on expenses and I was wondering if I could cancel my subscription", "label": "cancel_service"}
+{"text": "I've been getting all these texts about my account being locked, but when I try to call the number back, no one answers, and I'm getting really worried", "label": "fraud_report"}
+{"text": "I'm just trying to figure out, like, what's the best time to visit your store, are you guys, like, really busy on weekends?", "label": "general_inquiry"}
+{"text": "I'm trying to decide between a few different internet plans, can you help me compare the features and pricing?", "label": "sales_inquiry"}
+{"text": "Can I cancel my service online or do I need to call in to do it?", "label": "cancel_service"}
+{"text": "I'm not sure if its a maintenance thing or a actual outage, but my service is out, can you tell me", "label": "service_outage_status"}
+{"text": "I'm experienin some kinda problem with my smartwatch, it's just not syncin with my phone or anything", "label": "technical_support"}
+{"text": "I dont know if its just my neighborhood or what, but everybodys service is out, can you tell me if its a, you know, a local issue or somethin bigger", "label": "service_outage_status"}
+{"text": "Hey, so I'm experienin some kinda issue with my desktop, it's just not connectin to the internet and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "I got a notification that my credit card is about to expire, can I update it over the phone?", "label": "billing_inquiry"}
+{"text": "I just got my statement and I'm a little confused, there's this one charge that's like, way higher than I expected", "label": "billing_inquiry"}
+{"text": "Hey, so I'm experienin some kinda issue with my tablet, it's just not chargIN properly, it gets to like 50 percent and then it just stops, and I've tried usin different chargers and everythin", "label": "technical_support"}
+{"text": "Can you help me downgrade my plan, I'm looking to save some money and I dont need all the features I'm currently paying for", "label": "cancel_service"}
+{"text": "I'm trying to change my password but it's saying it's not strong enough, can you help me come up with a new one that'll work and, like, meet the requirements or whatever?", "label": "account_management"}
+{"text": "I saw a promo for a, like, free trial of your new service, can you give me more details on that?", "label": "sales_inquiry"}
+{"text": "Are there any new products or services that you're offering that I might be interested in?", "label": "sales_inquiry"}
+{"text": "I'm tryin to use your app, but it's sayin I need to update it, and I've tried updatin it like five times already", "label": "technical_support"}
+{"text": "Um, I was wondering if you guys have any discounts for students or military personnel who want to purchase a new device?", "label": "sales_inquiry"}
+{"text": "I've been noticin that my internet's been really unreliable lately, it's droppin in and out all the time, and I've tried troubleshootin it myself but nothin's workin", "label": "technical_support"}
+{"text": "Hey, so I'm tryin to use this app, but it's sayin I need to update it, and I've tried updatin it like three times already", "label": "technical_support"}
+{"text": "I think I've been scammed, someone called me saying they were from your security team and they needed me to verify my account info", "label": "fraud_report"}
+{"text": "Hey, so I'm havin some trouble with my service, is it a known issue or somethin", "label": "service_outage_status"}
+{"text": "I need to, like, downgrade my plan because I'm not using all the features, can you, uh, help me with that?", "label": "account_management"}
+{"text": "I'm having some trouble with my account, I think I need to, you know, update my credit card info or somethin", "label": "account_management"}
+{"text": "I'm trying to pay my bill, but the website is being really weird, it won't let me enter my credit card info", "label": "billing_inquiry"}
+{"text": "I've been without service for, like, a day now, can you give me an estimated time for when itll be restored, please, thats all I'm askin", "label": "service_outage_status"}
+{"text": "I've been having some issues with my budget and I think canceling my service is the best option for me right now, can you assist me with that?", "label": "cancel_service"}
+{"text": "I'm trying to change my account settings but I'm not sure what plan I'm on, can you tell me what features I'm currently getting and if I can upgrade or downgrade?", "label": "account_management"}
+{"text": "I'm interested in possibly upgrading my current plan, can you tell me what options are available?", "label": "sales_inquiry"}
+{"text": "I've been checkin social media and everybody's sayin their service is out, is it a bigger deal or just my area", "label": "service_outage_status"}
+{"text": "I'm gettin a little worried, I need to know if theres a, uh, a company-wide outage or somethin", "label": "service_outage_status"}
+{"text": "I'm trying to find out if you have any locations near me, um, I'm in like downtown area", "label": "general_inquiry"}
+{"text": "I'm not sure what's going on with my bill, it says I owe $150, but I could've sworn I already paid that", "label": "billing_inquiry"}
+{"text": "I'm havin some trouble with my computer, it's just not recognizing my mouse or keyboard or anything", "label": "technical_support"}
+{"text": "Can you help me cancel my service and get a refund for the rest of the month?", "label": "cancel_service"}
+{"text": "I need to, like, change my login credentials, can you help me with that?", "label": "account_management"}
+{"text": "I wanna switch to the basic plan, is that gonna, like, affect my service or anything?", "label": "account_management"}
+{"text": "I need to upgrade my plan, like, ASAP, can you do that for me?", "label": "account_management"}
+{"text": "I've been tryin to get online for hours, is there some kinda outage or is it just my luck", "label": "service_outage_status"}
+{"text": "I'm having some problems with my laptop, it's just not booting up properly and I've tried like everything", "label": "technical_support"}
+{"text": "So I'm tryin to figure out if its a, you know, a company-wide thing or just a local issue, can you help me", "label": "service_outage_status"}
+{"text": "I've been experiencin some kinda issue with my tablet, it's just not chargIN properly, it gets to like 50 percent and then it just stops", "label": "technical_support"}
+{"text": "I was wondering if you guys have a, uh, dress code or something, I wanna make sure I'm dressed okay to come in", "label": "general_inquiry"}
+{"text": "Um, I was wondering if you guys have any, like, discounts for long-time customers who want to upgrade their devices?", "label": "sales_inquiry"}
+{"text": "I've been noticing some strange transactions on my account, like, multiple charges in one day, and I have no idea what they're for", "label": "fraud_report"}
+{"text": "So I'm looking at my payment history, and I see this thing that says 'miscellaneous charge', what's that even mean?", "label": "billing_inquiry"}
+{"text": "I'm trying to change my plan but the website is being really weird, can you just do it for me over the phone?", "label": "account_management"}
+{"text": "So I've been trying to update my account info online but it keeps saying my password is wrong, can you help me figure out what's going on?", "label": "account_management"}
+{"text": "Do you have any, uh, resources or, like, guides that can help me, you know, make the most of my purchase", "label": "general_inquiry"}
+{"text": "Are you guys doin maintenance or somethin, my service has been in and out all day", "label": "service_outage_status"}
+{"text": "I've been without service for a bit now, can you give me an update on when it'll be restored, please", "label": "service_outage_status"}
+{"text": "I wanna cancel my service, but I'm not sure if I'll be able to get a refund for the equipment I bought", "label": "cancel_service"}
+{"text": "How much notice do I need to give to cancel my service, is it like a month or something?", "label": "cancel_service"}
+{"text": "Hi, I'm just wondering if there's a outage in my area or somethin", "label": "service_outage_status"}
+{"text": "I need to update my email address on my account because I'm changing jobs and my old email is getting shut down, can you help me with that?", "label": "account_management"}
+{"text": "I'm trying to figure out why I was charged a late fee, I know I paid my bill on time, I even got a confirmation email", "label": "billing_inquiry"}
+{"text": "I wanna get a new gaming console, do you have any bundles or packages that include games and accessories?", "label": "sales_inquiry"}
+{"text": "Hi, I just wanted to check if there's a, uh, service outage in my area or somethin", "label": "service_outage_status"}
+{"text": "I'm trying to find out if you guys have any, like, pop-up shops or, you know, temporary locations, I heard you guys do those sometimes", "label": "general_inquiry"}
+{"text": "I'm looking for a store with a, like, really big selection, do you guys have any locations that are, uh, larger than the others?", "label": "general_inquiry"}
+{"text": "I need to get a copy of my receipt from last month, is that something you can email to me or do I have to log in to my account?", "label": "billing_inquiry"}
+{"text": "I'd like to cancel my service, um, as soon as possible please", "label": "cancel_service"}
+{"text": "I'm callin to see if you guys can give me an update on the status of the service, its been out for a while now", "label": "service_outage_status"}
+{"text": "Can you tell me about your, uh, customer service, like how do I contact you guys if I have a problem?", "label": "general_inquiry"}
+{"text": "So I've been looking at my current plan and I'm thinking about, you know, adding a new line, can you walk me through the process and pricing?", "label": "sales_inquiry"}
+{"text": "I'm trying to change my password but it's saying it's not strong enough, can you help me come up with a new one that'll work?", "label": "account_management"}
+{"text": "Um, hi, I'm trying to use your app but it's saying I need to update my operating system, is that right?", "label": "technical_support"}
+{"text": "I'm trying to, uh, update my profile info on my account, can you walk me through the steps to do that?", "label": "account_management"}
+{"text": "I think there might be a mistake on my account, 'cause I'm being charged for a service I don't even have, can you help me fix that?", "label": "billing_inquiry"}
+{"text": "I've been noticing that my phone's battery's been draining really fast, and I'm not sure what's causing it", "label": "technical_support"}
+{"text": "Hey, I saw this ad for a new smartwatch and I'm really interested, can you give me some more info on it?", "label": "sales_inquiry"}
+{"text": "I'm havin some issues with my smartwatch, it's just not syncin with my phone or anythin, and I've tried restartin it and everythin, but nothin's workin", "label": "technical_support"}
+{"text": "I'd like to cancel my premium plan and just go with the basic one, I dont think I need all the extra features", "label": "cancel_service"}
+{"text": "Can you tell me about your, like, customer loyalty program, do you guys have, uh, any rewards for frequent customers?", "label": "general_inquiry"}
+{"text": "I've been with your company for a while now and I'm looking to, you know, try out some new services, can you tell me about any bundles or packages that might be a good fit for me?", "label": "sales_inquiry"}
+{"text": "Can you tell me about your, like, store security, do you guys have, uh, security cameras and stuff?", "label": "general_inquiry"}
+{"text": "I'm calling to report some suspicious activity, I just saw a charge for a subscription service I never signed up for, and I'm pretty sure it's a scam", "label": "fraud_report"}
+{"text": "I was just talkin to my neighbor and they're havin the same issue, so I'm thinkin it might be a, you know, a neighborhood thing, can you help me", "label": "service_outage_status"}
+{"text": "Can you help me figure out how to, uh, cancel my subscription without getting charged a fee?", "label": "cancel_service"}
+{"text": "I'm tryin to connect my phone to my car's bluetooth, but it's not workin, I've tried pairin them like ten times already, and I've restarted my phone and everythin", "label": "technical_support"}
+{"text": "I just wanna know if I should be expectin my service to be out for a while, or if it's gonna be back on soon", "label": "service_outage_status"}
+{"text": "So I've been looking at my current device and I'm thinking about getting a new one, what are my options for, like, trading it in or upgrading?", "label": "sales_inquiry"}
+{"text": "I, um, I think someone's taken over my account, I just got an email saying my password's been changed, but I didn't change it", "label": "fraud_report"}
+{"text": "I'm trying to stream a video but it keeps buffering, and I've checked my internet speed and it's fine", "label": "technical_support"}
+{"text": "I'm gettin a little worried, I need to know if theres a, uh, a company-wide outage or if its just a local thing", "label": "service_outage_status"}
+{"text": "I'm calling to cancel my service, I've been thinking about it for a while now and I just dont see the point in paying for it anymore", "label": "cancel_service"}
+{"text": "I'm not really using my service like I thought I would, so I think I'm just gonna cancel it and save some money", "label": "cancel_service"}
+{"text": "Can you help me with my invoice from last week, I think there's an error on it", "label": "billing_inquiry"}
+{"text": "Can you, like, walk me through the process of getting a new device through your company?", "label": "sales_inquiry"}
+{"text": "I was wondering if you guys have any, like, educational programs or, you know, workshops for, uh, kids and adults?", "label": "general_inquiry"}
+{"text": "I need to, you know, cancel my account, it's just not working out for me", "label": "cancel_service"}
+{"text": "Um, I was wondering if you guys have any, like, premium services or add-ons that could enhance my current plan?", "label": "sales_inquiry"}
+{"text": "So I've been thinking about adding a new service to my plan, what are my options, exactly?", "label": "sales_inquiry"}
+{"text": "I think someone's trying to steal my identity, I've been getting all these weird emails and letters about accounts I never opened", "label": "fraud_report"}
+{"text": "I'm callin to ask about the status of the outage, I've been without service for a bit now", "label": "service_outage_status"}
+{"text": "Hi, I'm callin about my service, it's been out for a while, do you know when it'll be back up", "label": "service_outage_status"}
+{"text": "I got a bill for a service I don't even remember signing up for, can you help me figure out what's going on", "label": "billing_inquiry"}
+{"text": "Hey, so I'm looking for a store that's, like, open 24/7, do you guys have any locations that are always open?", "label": "general_inquiry"}
+{"text": "I'm thinking of canceling my service and just using a different provider, can you tell me what the cancellation process is like?", "label": "cancel_service"}
+{"text": "I'm pretty sure I already paid my bill, but I just got a notification saying it's overdue, can you look into that for me?", "label": "billing_inquiry"}
+{"text": "I'm experiencing some issues with my service, is there a wider problem goin on", "label": "service_outage_status"}
+{"text": "I've been havin some issues with my printer, it's just not printin anything, I've tried turnin it on and off and all that", "label": "technical_support"}
+{"text": "I'm gettin this error message on my laptop, it says somethin about a disk error, and I'm not really sure what that means", "label": "technical_support"}
+{"text": "I think there might be somethin wrong with my internet provider, cuz my internet's been really slow and unreliable lately", "label": "technical_support"}
+{"text": "I'm really scared, I just got a message saying my account's been locked due to suspicious activity, but I don't know what's going on or how to fix it", "label": "fraud_report"}
+{"text": "I'm looking for a, you know, unique and, like, special experience, do you guys have any, uh, exclusive events or, like, VIP access", "label": "general_inquiry"}
+{"text": "I need help with a potential security issue, I just saw a charge for a product I've never heard of", "label": "fraud_report"}
+{"text": "I'm trying to set up a payment arrangement, 'cause I'm a little short on cash this month, is that something you guys can help me with?", "label": "billing_inquiry"}
+{"text": "I'm trying to set up auto pay, but I don't see that option on my account page, help", "label": "billing_inquiry"}
+{"text": "I think someone might have, uh, hacked into my account or something, Ive been getting all these strange emails", "label": "fraud_report"}
+{"text": "I was told to call and check if there's an outage, so yeah, is there one", "label": "service_outage_status"}
+{"text": "I'm looking at my statement and I see a charge for a service I don't use, can you remove that for me?", "label": "billing_inquiry"}
+{"text": "So I'm not sure if its related to the weather or what, but my service is out, is everybodys service out", "label": "service_outage_status"}
+{"text": "Hey, I saw a commercial for your new, like, smart home system, can I get more info on that?", "label": "sales_inquiry"}
+{"text": "I'd like to cancel my service, but I'm not sure what the process is, can you walk me through it?", "label": "cancel_service"}
+{"text": "I'm gettin this really annoying error message on my computer, it's just keepin appearin over and over again, and I don't know how to get rid of it", "label": "technical_support"}
+{"text": "I wanna switch to the annual plan, is that gonna save me money or what's the difference?", "label": "account_management"}
+{"text": "I'm just trying to figure out, like, what's the best way to get to your store without a car, do you have any, uh, public transportation options nearby?", "label": "general_inquiry"}
+{"text": "So, I'm havin some issues with my gaming pc, it's just not performin well, and I've tried upgradin my graphics card and everythin", "label": "technical_support"}
+{"text": "I'm trying to cancel my service, but I don't want to get charged for the rest of the month, how does that work exactly?", "label": "billing_inquiry"}
+{"text": "I'd like to change my plan to the premium tier, how do I go about doin that?", "label": "account_management"}
+{"text": "Hey, so I was looking at my bill and I noticed I'm being charged for a premium service, but I don't think I signed up for that", "label": "billing_inquiry"}
+{"text": "Can you tell me if there's a fee for paying my bill late, 'cause I'm a little worried I might've missed the deadline", "label": "billing_inquiry"}
+{"text": "I'm trying to find out if you guys have any, like, special accommodations for, uh, people with disabilities, my sister uses a wheelchair", "label": "general_inquiry"}
+{"text": "I'm looking for a, you know, fun and, like, interactive way to, uh, learn about your products, do you guys have any, like, virtual tours or something", "label": "general_inquiry"}
+{"text": "I'm trying to log in but it says my password is incorrect, can you reset it for me or something?", "label": "account_management"}
+{"text": "I'm trying to decide if I should get the standard or premium version of your new product, can you help me out?", "label": "sales_inquiry"}
+{"text": "I got an email saying my payment was declined, but I know I have enough money in my account, what's going on with that?", "label": "billing_inquiry"}
+{"text": "Can you tell me how to, like, change my username and password and all that jazz?", "label": "account_management"}
+{"text": "I'm looking for a, you know, unique gift and I was wondering if you guys have any, like, specialty items or something", "label": "general_inquiry"}
+{"text": "Hey, so my password isnt workin, can i get it reset or somethin?", "label": "account_management"}
+{"text": "I'm trying to figure out what's going on with my account, I just got a statement and there are all these charges I dont recognize", "label": "fraud_report"}
+{"text": "I'm trying to reduce my monthly expenses and canceling my service is one of the options I'm considering, can you help me with that?", "label": "cancel_service"}
+{"text": "I'm trying to plan a, you know, road trip and I was wondering if you have any, like, stores along the way", "label": "general_inquiry"}
+{"text": "I need to update my address on my account, um, can you help me with that?", "label": "account_management"}
+{"text": "So, I've heard great things about your new product, can I get a demo or something to try it out?", "label": "sales_inquiry"}
+{"text": "Are you guys havin some kinda outage or maintenance or somethin, my service is down", "label": "service_outage_status"}
+{"text": "Can you tell me how to, you know, switch from the monthly plan to the yearly plan, is there any, like, discount or anything?", "label": "account_management"}
+{"text": "I'm looking for a store that's, like, really close to my house, can you tell me if you have any locations in my area", "label": "general_inquiry"}
+{"text": "I'm tryin to use your service, but it's sayin my account's been suspended, and I'm pretty sure I've paid all my bills on time", "label": "technical_support"}
+{"text": "I want to report some unauthorized transactions, they all happened in the past week and I dont know how to stop them", "label": "fraud_report"}
+{"text": "I want to cancel my subscription but I'm not sure how to do it, can you walk me through the process?", "label": "account_management"}
+{"text": "I'm tryin to get some work done, but my service keeps droppin, is there a known issue or somethin", "label": "service_outage_status"}
+{"text": "I'm trying to figure out what's going on with my account, I just got a statement and there are all these charges I don't recognize", "label": "fraud_report"}
+{"text": "I'm thinking of getting a new smart tv, can you tell me about your current models and any deals you have going on?", "label": "sales_inquiry"}
+{"text": "I'm gettin this weird pop-up on my phone, it's just keepin appearin over and over again, and I don't know how to get rid of it", "label": "technical_support"}
+{"text": "I'd like to cancel my premium subscription and just go with the free version, is that possible?", "label": "cancel_service"}
+{"text": "Hey, so I just got a new job and I need to change my, you know, title and company name on my account, how do I do that?", "label": "account_management"}
+{"text": "I need to cancel my service because I'm, uh, having some financial difficulties and I cant afford it anymore", "label": "cancel_service"}
+{"text": "I want to report a fraud, someone's been using my account to make purchases online and I dont know how they got my info", "label": "fraud_report"}
+{"text": "Hey, so I'm havin some issues with my service, is it a, you know, a known issue or somethin", "label": "service_outage_status"}
+{"text": "Do you have any, uh, services or, like, expertise that you offer in-store, like, uh, workshops or consultations", "label": "general_inquiry"}
+{"text": "I'm having trouble connecting my bluetooth headphones to my phone, I've tried pairing them like five times already", "label": "technical_support"}
+{"text": "I've been experiencing a lot of lag on my computer, and I was wondering if you could help me figure out what's causing it", "label": "technical_support"}
+{"text": "I need to cancel my premium plan, it's just too expensive for me right now, can you assist me with that?", "label": "cancel_service"}
+{"text": "I'm gettin this really annoying pop-up on my computer, it's just keepin appearin over and over again, and I don't know how to get rid of it, it's really frustratin", "label": "technical_support"}
+{"text": "Hey, so I'm looking for a store that's open, like, really late, do you guys have any locations that are open past 10 pm?", "label": "general_inquiry"}
+{"text": "I think I might've been overcharged for my service, can you review my account and see if there's been a mistake?", "label": "billing_inquiry"}
+{"text": "I'm trying to find out if you guys have any, like, partnerships with, uh, local businesses, can I use my rewards card from other stores at your location?", "label": "general_inquiry"}
+{"text": "I've been having some trouble with my budget and I think canceling my subscription is the best option for me, can you help me with that?", "label": "cancel_service"}
+{"text": "So, I'm tryin to use your app, but it's sayin I need to update it, and I've tried updatin it like five times already, but it's still not workin", "label": "technical_support"}
+{"text": "Do you have any, uh, ATMs or, like, payment kiosks in your stores, just in case I need to, you know, get some cash", "label": "general_inquiry"}
+{"text": "Can you tell me about your, like, Wi-Fi policy, is it free or do I have to pay for it?", "label": "general_inquiry"}
+{"text": "I'm trying to find out if you have any, uh, parking options near your stores, is it, like, free or do I have to pay?", "label": "general_inquiry"}
+{"text": "I'm callin to ask about the status of the outage, I've been without service for a bit now and I'm gettin a little frustrated", "label": "service_outage_status"}
+{"text": "Can you tell me if theres a, you know, a bigger outage goin on or somethin, my service is down", "label": "service_outage_status"}
+{"text": "I'm not sure what's going on with my service, but I think I'm just gonna cancel it and find a different provider", "label": "cancel_service"}
+{"text": "I want to report a fraud, someone's been using my account to make purchases online, and I don't know how they got my login info", "label": "fraud_report"}
+{"text": "I'm just wondering, do you guys have any, like, bilingual staff, I have a friend who only speaks Spanish", "label": "general_inquiry"}
+{"text": "Hey, so I just got married and I need to change my last name on my account, how do I do that?", "label": "account_management"}
+{"text": "I'm trying to use your website but it's not loading properly, it just says 'page not found' or something", "label": "technical_support"}
+{"text": "I need to cancel my service because I'm moving to a different area and I wont be able to use it anymore", "label": "cancel_service"}
+{"text": "Can you tell me about your, um, accessibility features, like do you have wheelchair ramps and stuff?", "label": "general_inquiry"}
+{"text": "I got a charge on my credit card that I don't recognize, and I'm pretty sure it's from you guys, can you tell me what it's for?", "label": "billing_inquiry"}
+{"text": "I'm callin to see if you guys can give me an update on the status of the service, its been out for a while now and I'm gettin a little frustrated", "label": "service_outage_status"}
+{"text": "I'm looking for a store that's open on Sundays, do you guys have any locations that are?", "label": "general_inquiry"}
+{"text": "I just saw a charge on my statement and I have no idea what it is, can you please help me figure out whats going on", "label": "fraud_report"}
+{"text": "Can you explain to me why my bill is higher this month than it was last month, I didn't change any of my services or anything", "label": "billing_inquiry"}
+{"text": "I'm gettin this error message on my tablet, it says somethin about a system update failin, and I'm not really sure what that means", "label": "technical_support"}
+{"text": "Hey, I heard about a new feature that's available on your latest smartwatches, can you give me more info on that?", "label": "sales_inquiry"}
+{"text": "How do I pay my bill online, I've been trying to figure it out for like 20 minutes", "label": "billing_inquiry"}
+{"text": "I'm trying to find out more about your company, like what's your mission and stuff", "label": "general_inquiry"}
+{"text": "I'm pretty sure I've been hacked or something, I've been getting all these weird emails and now my account's been locked out", "label": "fraud_report"}
+{"text": "I'm trying to update my credit card info but it's saying there's an error, can you help me figure out what's going on?", "label": "account_management"}
+{"text": "I'm tryin to use your website, but it's not loadin properly, it just says 'server not found' or somethin, and I've tried usin different browsers and everythin", "label": "technical_support"}
+{"text": "Um, so like, I'm tryin to use your app but it's sayin I need to update it, and I've tried updatin it like three times already", "label": "technical_support"}
+{"text": "I'm looking to reduce my monthly bills, can I cancel my service or something?", "label": "cancel_service"}
+{"text": "I'm havin some trouble with my service, I dont know if its just me or everybodys havin issues", "label": "service_outage_status"}
+{"text": "I'm trying to log in but it says my account is inactive, can you reactivate it for me or tell me what's going on with that?", "label": "account_management"}
+{"text": "I'm tryin to use your service but I'm gettin this error message that says my account's been locked due to suspicious activity", "label": "technical_support"}
+{"text": "I think there might be a mistake on my bill, I was charged for something I don't even use", "label": "billing_inquiry"}
+{"text": "I'm tryin to get some work done, but my service is down, do you guys know whats goin on", "label": "service_outage_status"}
+{"text": "I need help with a potential fraud issue, I just saw a charge on my account for a purchase I didn't make", "label": "fraud_report"}
+{"text": "How do I go about canceling my, uh, my premium plan?", "label": "cancel_service"}
+{"text": "I'm not using it as much as I thought I would, so can I just cancel it?", "label": "cancel_service"}
+{"text": "Can you tell me about your, um, customer feedback process, like how do you guys, you know, use feedback to improve your stores?", "label": "general_inquiry"}
+{"text": "I'm interested in learning more about your company's, like, cloud storage services and how they work with your other products?", "label": "sales_inquiry"}
+{"text": "Um, so like, I'm tryin to watch a video on your website, but it keeps freezin and I've checked my internet connection and it's fine", "label": "technical_support"}
+{"text": "Can you tell me how to change my account type from personal to business, do I need to provide any extra info or, like, documentation or anything?", "label": "account_management"}
+{"text": "Do you guys accept paypal or just credit cards for payments?", "label": "billing_inquiry"}
+{"text": "I got a notification that my payment is due soon, but I already sent in a check, did you guys not receive it or something?", "label": "billing_inquiry"}
+{"text": "I'm looking for a, you know, really unique and, like, special gift, can you tell me if you guys have any, uh, one-of-a-kind items", "label": "general_inquiry"}
+{"text": "I was wondering if you guys have any, uh, specific rules about, you know, bringing food or drink into your stores", "label": "general_inquiry"}
+{"text": "I'm not sure if I'm on the right plan, can you tell me what features I'm currently getting and if I can, you know, upgrade or downgrade or whatever?", "label": "account_management"}
+{"text": "I'm just curious, do you guys have any, like, secret menus or, you know, hidden items that aren't advertised?", "label": "general_inquiry"}
+{"text": "I need to cancel my service ASAP, I'm moving to a new apartment and I wont be able to use it anymore, can you help me with that?", "label": "cancel_service"}
+{"text": "I'm trying to log in but it says my account is inactive, can you reactivate it for me or tell me what's going on?", "label": "account_management"}
+{"text": "I think there might be somethin wrong with my internet provider, cuz my internet's been really slow and unreliable lately, and I've tried troubleshootin it myself but nothin's workin", "label": "technical_support"}
+{"text": "So, I'm tryin to watch a video on your app, but it keeps freezin, and I've checked my internet connection and it's fine", "label": "technical_support"}
+{"text": "I'm calling about some weird stuff going on with my account, I just got a notification about a payment I didn't make and I'm getting kinda worried", "label": "fraud_report"}
+{"text": "I need to change my billing info, 'cause I just moved to a new address, how do I do that exactly?", "label": "billing_inquiry"}
+{"text": "I've been thinking about canceling my service for a while now, but I'm not sure if I'll be charged a fee or something, can you tell me about your cancellation policy?", "label": "cancel_service"}
+{"text": "I just got a call from someone claiming to be from your security team, but it sounded really fishy", "label": "fraud_report"}
+{"text": "I'm looking to, you know, enhance my home entertainment system, can you tell me about your latest devices and promotions?", "label": "sales_inquiry"}
+{"text": "I've been checkin social media and everybody's sayin their service is out, is it a company-wide thing", "label": "service_outage_status"}
+{"text": "My laptop's keyboard is acting really weird, some of the keys are typing out weird characters and stuff", "label": "technical_support"}
+{"text": "I need to cancel my service because I'm not using it as much as I thought I would, and I dont want to pay for something I'm not using", "label": "cancel_service"}
+{"text": "I'm experienin some kinda problem with my tablet, it's just not chargIN properly, it gets to like 80 percent and then it just stops", "label": "technical_support"}
+{"text": "I'm tryin to send a file through your website, but it's sayin the file's too large, and I'm pretty sure it's within the size limit", "label": "technical_support"}
+{"text": "I'm interested in learning more about your company's, like, streaming services and how they work with your other products?", "label": "sales_inquiry"}
+{"text": "I've been checkin the website and it says everythin is fine, but my service is still out, whats goin on", "label": "service_outage_status"}
+{"text": "How do I, uh, get to your store from the train station, is it walkable?", "label": "general_inquiry"}
+{"text": "I'm looking to, you know, expand my current plan to include more features, what are my options?", "label": "sales_inquiry"}
+{"text": "Um, I was wondering if I could get a detailed breakdown of my charges for the past quarter, just so I can see where my money's going", "label": "billing_inquiry"}
+{"text": "I dont know if its just my neighborhood or what, but everybodys service is out, is it a, you know, a local issue", "label": "service_outage_status"}
+{"text": "I'm looking to buy a new phone, do you have any deals or promotions going on right now?", "label": "sales_inquiry"}
+{"text": "I think Ive been a victim of, uh, identity theft or something, Ive been getting all these weird letters in the mail about accounts I never opened", "label": "fraud_report"}
+{"text": "I've heard great things about your company's customer service, can you tell me more about your, uh, support options?", "label": "sales_inquiry"}
+{"text": "I need help with a security issue, I just got a notification about a login attempt from a different country", "label": "fraud_report"}
+{"text": "I'm looking to make some changes to my budget and canceling my service is one of the things I'm considering", "label": "cancel_service"}
+{"text": "Um, I'm trying to use your app but it's saying my password is incorrect, even though I know it's right", "label": "technical_support"}
+{"text": "I'm trying to plan a, you know, birthday party or something and I wanna know if you guys have any, like, event spaces", "label": "general_inquiry"}
+{"text": "Hi, I just wanted to check if theres a outage in my area, I've been havin some trouble", "label": "service_outage_status"}
+{"text": "I'm getting this error message that says my account's been locked due to too many login attempts, but I know I've only tried like two times", "label": "technical_support"}
+{"text": "Can you tell me why my payment is late, I could've sworn I paid it on time", "label": "billing_inquiry"}
+{"text": "Can I downgrade my plan to the basic one, I dont need all the extra features", "label": "cancel_service"}
+{"text": "Can I get some information on your latest device, I'm thinking of, you know, possibly making a purchase soon?", "label": "sales_inquiry"}
+{"text": "I'm trying to understand my billing cycle, is it monthly or quarterly or what?", "label": "billing_inquiry"}
+{"text": "I'm trying to cut costs and I think canceling my service is the way to go", "label": "cancel_service"}
+{"text": "I'm moving to a new state and I need to update my address on my account, will that affect my service at all or do I need to do anything else?", "label": "account_management"}
+{"text": "Hi, I was just wondering what time you guys are open till today?", "label": "general_inquiry"}
+{"text": "I'm looking at my latest bill and I, uh, don't understand why it's so high this month", "label": "billing_inquiry"}
+{"text": "I've been without service for, like, a day now, can you give me an estimated time for when itll be restored, please", "label": "service_outage_status"}
+{"text": "I'm not sure if its a, you know, a maintenance thing or a actual outage, but my service is out", "label": "service_outage_status"}
+{"text": "I'm looking at my invoice and it says I owe more than I thought I would, can you walk me through the charges and see if there's any way to reduce them?", "label": "billing_inquiry"}
+{"text": "So, I've been looking at my current plan and I'm thinking about, you know, upgrading to get more features, what are my options?", "label": "sales_inquiry"}
+{"text": "I've been looking at my expenses and I realized I cant afford my service anymore, so I think I'm gonna have to cancel it, can you help me with that?", "label": "cancel_service"}
+{"text": "My internet's been really slow lately, and I've tried troubleshooting it myself but nothing's working", "label": "technical_support"}
+{"text": "I think my account's been compromised, I just got an email saying my password's been changed, but I didn't change it", "label": "fraud_report"}
+{"text": "I want to report a fraud, someone's been using my account to make purchases online and I don't know how to stop it", "label": "fraud_report"}
+{"text": "I just got a call from someone claiming to be from your company, saying my account had been compromised, but I think it was just a phishing scam", "label": "fraud_report"}
+{"text": "I just got a notification about a charge on my account and I have no idea what it's for, can you help me figure it out?", "label": "fraud_report"}
+{"text": "So I'm looking for a better internet plan, can you walk me through your different options and pricing?", "label": "sales_inquiry"}
+{"text": "I'm just curious, do you guys have any, like, special events or promotions coming up?", "label": "general_inquiry"}
+{"text": "I was wonderin if you guys could give me some info on the outage, like what's causin it and when it'll be fixed", "label": "service_outage_status"}
+{"text": "I'm trying to decide between a few different plans, can you help me figure out which one is best for me?", "label": "sales_inquiry"}
+{"text": "I'd like to cancel my service, but I'm not sure if I'll be charged a fee or something", "label": "cancel_service"}
+{"text": "I'm trying to simplify my expenses and canceling my service is one of the things I'm considering, can you walk me through the process?", "label": "cancel_service"}
+{"text": "I'm not really using my service as much as I thought I would, so I think I'm just gonna cancel it, yeah", "label": "cancel_service"}
+{"text": "I'm trying to figure out why my bill is so high, is it because of the extra services I added or what", "label": "billing_inquiry"}
+{"text": "What are your holiday hours, do you guys close on, like, Christmas and stuff?", "label": "general_inquiry"}
+{"text": "So, I've been looking at my current plan and I'm thinking about upgrading to get more storage, what are my options?", "label": "sales_inquiry"}
+{"text": "I'm having some financial issues and I need to cancel my service ASAP", "label": "cancel_service"}
+{"text": "Do you have any, uh, recommendations for, like, first-time visitors, what are some must-see things in your store?", "label": "general_inquiry"}
+{"text": "I'm movin to a new house and I need to update my billing address, can you help me out?", "label": "account_management"}
+{"text": "I think my account's been compromised, I just got an email saying my password's been changed, but I didnt change it", "label": "fraud_report"}
+{"text": "So I was reviewing my invoice and I saw this one line item that says 'equipment rental', what's that for?", "label": "billing_inquiry"}
+{"text": "I've been having some issues with my budget and I think I need to cancel my subscription to free up some cash", "label": "cancel_service"}
+{"text": "I'm tryin to use your website, but it's not loadin properly, it just says 'server not found' or somethin", "label": "technical_support"}
+{"text": "I've been noticin that my phone's been overheatin a lot lately, and I'm worried it's gonna damage the battery or somethin", "label": "technical_support"}
+{"text": "I'd like to downgrade my plan to the smallest one you offer, I dont need all the features I'm paying for and I'm trying to save some money", "label": "cancel_service"}
+{"text": "I think there might be somethin wrong with my phone's operatin system, cuz it's been actin really weird, it's just really slow and stuff", "label": "technical_support"}
+{"text": "I'm calling to, uh, see about canceling my service, I've been thinking about it for a while now", "label": "cancel_service"}
+{"text": "So, I'm havin some issues with my gaming pc, it's just not performin well, and I've tried upgradin my graphics card and everythin, but nothin's workin", "label": "technical_support"}
+{"text": "I got a call saying my payment was overdue, but I know I sent in a check, did you guys not get it or something?", "label": "billing_inquiry"}
+{"text": "Hey, so I'm kinda lost, can you tell me where your closest location is to, like, the city center?", "label": "general_inquiry"}
+{"text": "I want to report a potential fraud issue, I just saw a charge on my account for a purchase I didnt make", "label": "fraud_report"}
+{"text": "Is there a known outage, I mean I know it's not just me, right, lots of people must be affected", "label": "service_outage_status"}
+{"text": "I just got my bill and I'm kinda confused, it says I owe more than I thought I would", "label": "billing_inquiry"}
+{"text": "Can you tell me what the process is for downgrading my plan, I dont need all the features I'm paying for", "label": "cancel_service"}
+{"text": "How come I was charged a late fee, I could've sworn I paid my bill on time, like, I even got a confirmation email", "label": "billing_inquiry"}
+{"text": "I'm getting this weird error message on my tablet, it says something about a system update failing", "label": "technical_support"}
+{"text": "I'm trying to compare your different plans and pricing, can you help me figure out which one is best for me?", "label": "sales_inquiry"}
+{"text": "I need to get a new, like, phone case, can you tell me about your current selection and any available discounts?", "label": "sales_inquiry"}
+{"text": "I'm trying to find out if you guys have any, like, donation programs or, uh, charity initiatives, I'm looking for ways to, you know, give back", "label": "general_inquiry"}
+{"text": "I'm trying to access my account but it's saying my username is incorrect, can you help me figure out what's going on with that?", "label": "account_management"}
+{"text": "I'm not sure if I'm being billed correctly, can you walk me through my charges for the past few months?", "label": "billing_inquiry"}
+{"text": "I need help with a security issue, I just got a notification about a login attempt from a different country, and I know I didn't try to log in from there", "label": "fraud_report"}
+{"text": "I've been noticing some strange activity on my account, like multiple logins in one day, and I dont know whats going on", "label": "fraud_report"}
+{"text": "I dont know whats going on, but my account balance is way off and I have no idea why", "label": "fraud_report"}
+{"text": "I've been checkin the website and it says everythin is fine, but I know thats not true, whats goin on", "label": "service_outage_status"}
+{"text": "I've been checkin the website and it says everythin is fine, but I know thats not true, so whats goin on with the service, can you tell me", "label": "service_outage_status"}
+{"text": "So I'm tryin to figure out if it's just me or if there's like a bigger issue, is the service down for everybody", "label": "service_outage_status"}
+{"text": "I'm moving to a new city and I wanna know if you have any stores there, can you help me with that?", "label": "general_inquiry"}
+{"text": "I'm looking at my invoice and it says I have a late fee, but I don't think that's fair", "label": "billing_inquiry"}
+{"text": "So, I'm havin some issues with my gaming console, it's just not loadin any games, and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "Can you tell me more about the different payment options you guys offer, like, do you have any discounts for paying annually or anything?", "label": "billing_inquiry"}
+{"text": "Can you help me cancel my, my, uh, my current plan and switch to a different one?", "label": "cancel_service"}
+{"text": "I just moved to a new country and I need to update my address on my account, will that affect my service at all?", "label": "account_management"}
+{"text": "I'm tryin to connect my phone to my car's wifi, but it's not workin, I've tried restartin my router and everythin", "label": "technical_support"}
+{"text": "Can you tell me about your, like, packaging and, uh, shipping materials, are they, like, eco-friendly and stuff?", "label": "general_inquiry"}
+{"text": "Hey, so I'm havin some trouble with my service and I was wonderin if you guys are aware of any outages in the area, thats all I'm really askin", "label": "service_outage_status"}
+{"text": "I need to report some suspicious charges, theyre all from different states and I havent been traveling", "label": "fraud_report"}
+{"text": "Do you have, like, a map or something on your website that shows all your locations?", "label": "general_inquiry"}
+{"text": "I need to update my email address on my account, can you walk me through the steps to do that?", "label": "account_management"}
+{"text": "I was just wonderin if you guys are aware of any outages in the area, I got a friend whos also havin trouble", "label": "service_outage_status"}
+{"text": "I just realized that someone's been accessing my account from a different location, what can I do?", "label": "fraud_report"}
+{"text": "I was wondering if you guys have any, like, interactive displays or, you know, demos in your stores", "label": "general_inquiry"}
+{"text": "I'm just curious, do you guys have any, like, rare or limited edition items that you only sell in certain locations?", "label": "general_inquiry"}
+{"text": "I'm looking to simplify my life and canceling my service is one of the things I'm considering, can you help me with that?", "label": "cancel_service"}
+{"text": "I think I might've messed up my wifi settings or somethin, cuz I'm not gettin any internet connection", "label": "technical_support"}
+{"text": "I'm interested in learning more about your company's, like, newest offerings, can you send me some info or something?", "label": "sales_inquiry"}
+{"text": "I'm not sure what's going on with my service, but I think I'm just gonna cancel it and find a different provider, it's just not working out for me", "label": "cancel_service"}
+{"text": "I just got a new credit card and I need to, like, update my payment method on my account, can you walk me through the steps?", "label": "account_management"}
+{"text": "I'm really worried, I just realized that someone's been making purchases on my account from a different country", "label": "fraud_report"}
+{"text": "I'm havin some issues with my service and I was wonderin if its a bigger problem or just mine", "label": "service_outage_status"}
+{"text": "I've been without service for, like, a day now, can you give me an estimated time for when itll be restored", "label": "service_outage_status"}
+{"text": "Can you tell me about your, um, gift wrapping services, do you guys offer, like, free gift wrapping or is it extra?", "label": "general_inquiry"}
+{"text": "I need to know more about your latest product, is it worth the investment?", "label": "sales_inquiry"}
+{"text": "Can you tell me a little bit about your return policy, I'm thinking of making a purchase", "label": "general_inquiry"}
+{"text": "I just got a new phone and I need to update my phone number on my account, is that something I can do myself or do I need to call you?", "label": "account_management"}
+{"text": "I'm trying to find out if you guys have any, you know, job openings or, like, career opportunities", "label": "general_inquiry"}
+{"text": "I'm looking for a better deal on my current service, can you tell me about any available upgrades or promotions?", "label": "sales_inquiry"}
+{"text": "I just realized that someone changed my account info, like my address and phone number, and I didnt authorize it", "label": "fraud_report"}
+{"text": "Uh, hi, I think someone's been using my credit card without my permission, can you help me?", "label": "fraud_report"}
+{"text": "I've been with your company for a while now, and I'm looking to, you know, take my service to the next level, what can you offer me?", "label": "sales_inquiry"}
+{"text": "My computer's been making this really loud whirring noise, and I'm worried it's gonna overheat or something", "label": "technical_support"}
+{"text": "I'm calling to report some suspicious activity, I just saw a charge for a subscription service I never signed up for", "label": "fraud_report"}
+{"text": "I just moved to a new city and I need to update my address on file, can you, uh, assist me with that?", "label": "account_management"}
+{"text": "Can I get my account info changed, like my phone number and stuff?", "label": "account_management"}
+{"text": "I'm callin to ask about the status of the service, I've been without it for a bit now and I'm gettin frustrated", "label": "service_outage_status"}
+{"text": "Hi, I'm gonna be in the area this weekend and I was wondering if you guys are open on Saturdays", "label": "general_inquiry"}
+{"text": "I'm confused about the charges on my latest bill, can you help me break it down?", "label": "billing_inquiry"}
+{"text": "Hey, so I just got a new job and my title is changing, can I update that on my account somehow?", "label": "account_management"}
+{"text": "I was wondering if you guys have any, like, community involvement programs or, you know, charity events", "label": "general_inquiry"}
+{"text": "I was wonderin if you guys could give me some info on the outage, like, you know, what's causin it and when it'll be fixed", "label": "service_outage_status"}
+{"text": "I'm just curious, do you guys have any, like, collaborations with, uh, other brands or artists", "label": "general_inquiry"}
+{"text": "I'm trying to set up automatic payments, but I don't see the option on my account page, is that something you can help me with?", "label": "billing_inquiry"}
+{"text": "I want to switch to the business plan, what's the process for that and are there any, like, extra fees or anything?", "label": "account_management"}
+{"text": "I'm thinking of, uh, upgrading my current service, can you tell me about any new plans or promotions you have available?", "label": "sales_inquiry"}
+{"text": "I'm having some trouble with my account and I think it's because my info is outdated, can you help me update it so I can get back in and, you know, manage my settings?", "label": "account_management"}
+{"text": "Can you tell me about any upcoming products or services that I might be interested in, like, stuff that's not out yet?", "label": "sales_inquiry"}
+{"text": "I'm in the market for a new tablet, can you tell me about your current lineup and any upcoming releases?", "label": "sales_inquiry"}
+{"text": "I've been trying to pay my bill all day, but your website keeps giving me an error message", "label": "billing_inquiry"}
+{"text": "I'm experiening some service issues and I was wonderin if its a wider problem or just me", "label": "service_outage_status"}
+{"text": "I need to update my security questions because I forgot what they are and I'm getting locked out of my account, can you, uh, help me with that?", "label": "account_management"}
+{"text": "I'm trying to log in but it says my, uh, account is locked, can you help me unlock it and, like, update my password or whatever?", "label": "account_management"}
+{"text": "I just got a notification about a purchase I didnt make and Im pretty sure its fraud", "label": "fraud_report"}
+{"text": "I'm tryin to use your website, but it's not loadin properly, it just says 'page not found' or somethin", "label": "technical_support"}
+{"text": "I just wanna cancel, I dont wanna pay for it no more", "label": "cancel_service"}
+{"text": "I'm just trying to figure out, like, how to get the most out of my shopping experience at your store", "label": "general_inquiry"}
+{"text": "How do I change my, you know, security questions and all that?", "label": "account_management"}
+{"text": "I've been checkin the website and it says everythin is fine, but I know thats not true, so whats goin on with the service", "label": "service_outage_status"}
+{"text": "I want to report a scam, someone tried to get me to give them my account info over the phone, saying it was a security measure", "label": "fraud_report"}
+{"text": "I'm looking to, you know, enhance my home security system, can you tell me about your latest devices and promotions?", "label": "sales_inquiry"}
+{"text": "I forgot my security questions and I don't know how to reset them, can you, uh, assist me with that?", "label": "account_management"}
+{"text": "I'm having some issues with my account and I think it's because my info is outdated, can you help me update it?", "label": "account_management"}
+{"text": "I think I might've downloaded some kinda virus or somethin, cuz my computer's been actin really weird, it's just really slow and stuff", "label": "technical_support"}
+{"text": "Hey, so I'm having trouble with your website, it's sayin my login credentials are incorrect, but I'm pretty sure I'm enterin everything right", "label": "technical_support"}
+{"text": "I'm not sure if its related to the weather or somethin, but my service is out, can you help me", "label": "service_outage_status"}
+{"text": "Um, hi, I think someone's accessed my account without my permission, I've been getting all these emails about password resets and I didn't request any of them", "label": "fraud_report"}
+{"text": "I'm looking at my invoice, and it says I owe more than I thought I would, can you walk me through the charges and see if there's any way to reduce them?", "label": "billing_inquiry"}
+{"text": "I'm gettin a little frustrated, I just wanna know if I should be expectin my service to be out for a while or what", "label": "service_outage_status"}
+{"text": "I need to report a potential security issue, I just saw a charge for a product I've never heard of before", "label": "fraud_report"}
+{"text": "So, I'm tryin to get some work done, but my service keeps droppin, can you tell me if theres a known issue or somethin", "label": "service_outage_status"}
+{"text": "I'm gettin this really annoying pop-up on my computer, it's just keepin appearin over and over again, and I don't know how to get rid of it", "label": "technical_support"}
+{"text": "I got a bill in the mail and it says I owe $200, but I thought I already paid that", "label": "billing_inquiry"}
+{"text": "I've been tryin to get online for hours, but I cant, is there some kinda outage or maintenance goin on that I dont know about", "label": "service_outage_status"}
+{"text": "I've been having some trouble with my budget and I think I'm gonna have to cancel my subscription, unfortunately", "label": "cancel_service"}
+{"text": "Hey, so I'm trying to plan a visit to your store, can you tell me what's the easiest way to get there using public transportation?", "label": "general_inquiry"}
+{"text": "I'm tryin to connect my phone to my car's bluetooth, but it's not workin, I've tried pairin them like ten times already", "label": "technical_support"}
+{"text": "Can you tell me about your, like, store events calendar, do you guys have, uh, any events coming up that I should know about?", "label": "general_inquiry"}
+{"text": "So, I've been with your company for a while now and I'm looking to, you know, upgrade my current device, what are my options?", "label": "sales_inquiry"}
+{"text": "I'm thinking of getting a new, uh, tablet for my kid, can you tell me about your current selection and any available discounts?", "label": "sales_inquiry"}
+{"text": "I'm in the market for a new laptop, can you tell me about your current lineup and any upcoming releases?", "label": "sales_inquiry"}
+{"text": "I'm tryin to update my account settings but it's not workin, can you, uh, help me figure it out?", "label": "account_management"}
+{"text": "So, I'm experiening some kinda problem with my gaming console, it's just not loadin any games, and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "I think I've been a victim of identity theft or something, I just got a letter in the mail about a credit card I never applied for", "label": "fraud_report"}
+{"text": "Um, I was wondering if you guys offer any, like, loyalty discounts or rewards for long-time customers who want to upgrade?", "label": "sales_inquiry"}
+{"text": "I need to update my payment method because my credit card got declined, can you help me add a new one to my account and, uh, make sure it's all set up correctly?", "label": "account_management"}
+{"text": "I need to, like, change my password and security questions because I'm getting a little worried about my account security, can you assist me with that?", "label": "account_management"}
+{"text": "So I'm tryin to figure out if its a, you know, a maintenance thing or a, uh, a actual outage", "label": "service_outage_status"}
+{"text": "I'm not sure what's going on, but I just got a call from someone claiming to be from your company, and they were asking for my login info", "label": "fraud_report"}
+{"text": "Do you have any, uh, eco-friendly practices or, like, sustainability initiatives?", "label": "general_inquiry"}
+{"text": "Im calling about a potential fraud issue, I just saw a charge for a subscription service I never signed up for", "label": "fraud_report"}
+{"text": "I'm having some trouble with my computer, it's just not recognizing my mouse or keyboard or anything", "label": "technical_support"}
+{"text": "I'm experiening some kinda issue with my desktop, it's just not turnin on, I've tried pluggin it in and out and all that", "label": "technical_support"}
+{"text": "I've been getting all these texts about my account being locked, but when I try to call the number back, no one answers", "label": "fraud_report"}
+{"text": "I just got a call from someone claiming to be from your security team, but it sounded really fishy, what should I do?", "label": "fraud_report"}
+{"text": "I'm calling to report some suspicious activity on my account, it looks like someone's been trying to buy stuff online", "label": "fraud_report"}
+{"text": "I'm having some trouble with my account and I think it's because my email address is outdated, can you help me update it so I can get back in?", "label": "account_management"}
+{"text": "I'm having some trouble with my account and I think it's because my, like, billing info is outdated, can you help me update it so I can, you know, get back in?", "label": "account_management"}
+{"text": "I'd like to downgrade my plan to the smallest one you offer, I dont need all the features I'm paying for", "label": "cancel_service"}
+{"text": "I think my account's been compromised, I just got an email saying my password's been changed, but I didn't change it, and now I'm locked out", "label": "fraud_report"}
+{"text": "I've been noticing some strange activity on my account, like multiple logins in one day, and I don't know what's going on", "label": "fraud_report"}
+{"text": "So I'm looking at my account history, and I see this one charge that's like, way higher than I expected, can you explain that to me?", "label": "billing_inquiry"}
+{"text": "Can you help me with a payment plan, I'm having a little trouble paying my bill this month", "label": "billing_inquiry"}
+{"text": "I'm looking for a, you know, quiet and, like, peaceful shopping experience, do you guys have any stores that are, uh, less crowded?", "label": "general_inquiry"}
+{"text": "I think I might've downloaded some kinda malware or somethin, cuz my computer's been actin really weird, it's just really slow and stuff", "label": "technical_support"}
+{"text": "I'm tryin to get some work done, but my service keeps droppin, is there a, uh, a known issue or somethin", "label": "service_outage_status"}
+{"text": "I'm looking to reduce my monthly expenses and canceling my service is one of the options I'm considering, can you help me with that?", "label": "cancel_service"}
+{"text": "Can you tell me about your, like, store history, how long you guys have been around and stuff?", "label": "general_inquiry"}
+{"text": "I saw a commercial for your new smart speaker, can I get more info on that, like, what it can do and how much it costs?", "label": "sales_inquiry"}
+{"text": "Can you help me, you know, update my contact info on my account, I just got a new phone number and email address?", "label": "account_management"}
+{"text": "I'm havin some trouble with my device, it's just not turnin on and I've tried chargIN it and everythin, but nothin's workin", "label": "technical_support"}
+{"text": "Hi, my phone's screen is frozen and I've tried restarting it like five times already", "label": "technical_support"}
+{"text": "I wanna switch to the monthly plan, is that gonna, like, change my billing cycle or anything?", "label": "account_management"}
+{"text": "I saw a commercial for your new wireless earbuds, can I get more info on that, like, what they can do and how much they cost?", "label": "sales_inquiry"}
+{"text": "I need to report a potential security issue, I just saw a charge for a product I've never even heard of, and I'm pretty sure I didn't buy it", "label": "fraud_report"}
+{"text": "I'm trying to decide between a few different devices, can you help me compare the features and pricing?", "label": "sales_inquiry"}
+{"text": "I'm gettin a little frustrated, I need to know if there's a known issue with the service, can you help me", "label": "service_outage_status"}
+{"text": "Hey, I heard about a new feature that's available on your latest devices, can you give me more info on that?", "label": "sales_inquiry"}
+{"text": "I wanna downgrade to the free plan, will that, you know, cancel my subscription or what?", "label": "account_management"}
+{"text": "I need a copy of my invoice from january, can you email it to me or something?", "label": "billing_inquiry"}
+{"text": "I've been looking at my budget and I realized I dont need all the features I'm paying for, so can I cancel some of them?", "label": "cancel_service"}
+{"text": "I'm trying to update my, uh, account settings but I'm not sure where to start, can you help me out?", "label": "account_management"}
+{"text": "I've been looking at my budget and I realized I cant afford my service anymore, so I think I'm gonna have to cancel it, can you help me with that?", "label": "cancel_service"}
+{"text": "So, I'm not sure if its related to the weather or what, but my service is out and I'm tryin to figure out if its just me or everybodys havin issues", "label": "service_outage_status"}
+{"text": "I'm just wondering, do you guys have any, like, loyalty rewards for, uh, frequent customers, I shop at your store all the time", "label": "general_inquiry"}
+{"text": "Hey, I just got a new credit card and I need to update my billing info on my account, how do I do that exactly?", "label": "account_management"}
+{"text": "I'm looking for a, you know, unique and, like, special souvenir, do you guys have any, uh, exclusive items that I can only buy in-store?", "label": "general_inquiry"}
+{"text": "I got a bill for a service I don't even remember signing up for, can you help me figure out what's going on with that?", "label": "billing_inquiry"}
+{"text": "I think there might be a problem with my account, I'm being charged for a service I don't even use, can you help me fix that?", "label": "billing_inquiry"}
+{"text": "I need to update my billing info because my credit card is expiring, can you walk me through the steps to do that?", "label": "account_management"}
+{"text": "I've been having some trouble with my service and I think canceling it is the best option for me, can you assist me with the cancellation process?", "label": "cancel_service"}
+{"text": "I'm trying to simplify my bills and I was wondering if I could just cancel my service and start over with a new plan", "label": "cancel_service"}
+{"text": "So I was trying to pay my bill online, but the website kept freezing on me, can I just pay over the phone instead?", "label": "billing_inquiry"}
+{"text": "Can you tell me about your, like, store layout, is it, uh, easy to navigate or do you have, like, a map or something?", "label": "general_inquiry"}
+{"text": "Can you tell me what I need to do to, like, downgrade my plan to the cheapest one you offer?", "label": "cancel_service"}
+{"text": "I'm looking to, you know, upgrade my current internet plan, can you tell me about your different options and pricing?", "label": "sales_inquiry"}
+{"text": "I'd like to downgrade to the, you know, the smaller plan, the one that's cheaper", "label": "cancel_service"}
+{"text": "I'm pretty sure its not just me, I mean I've seen other people postin about it on social media, is it a, uh, a known issue", "label": "service_outage_status"}
+{"text": "I need to get a new device for my kid, can you tell me about your current selection and any available discounts?", "label": "sales_inquiry"}
+{"text": "I want to update my credit card info, can I do that over the phone or do I have to do it online?", "label": "billing_inquiry"}
+{"text": "I need to cancel my service ASAP, I'm getting married and we're combining our accounts, so I wont be needing it anymore", "label": "cancel_service"}
+{"text": "Is there a, uh, known outage in my area, I've been tryin to get online for hours", "label": "service_outage_status"}
+{"text": "I was charged $50 extra this month and I have no idea why, can you explain it to me?", "label": "billing_inquiry"}
+{"text": "I'm having some issues with my account and I think it's because my, like, security questions are outdated, can you help me update those?", "label": "account_management"}
+{"text": "So, I've been thinking about adding a new line to my plan, can you walk me through the process and pricing?", "label": "sales_inquiry"}
+{"text": "I think there might be somethin wrong with my phone's screen, it's just not respondin to touch and I've tried restartin it and everythin", "label": "technical_support"}
+{"text": "Um, I was wondering if you guys have any, like, protection plans or insurance options for customers who want to protect their devices?", "label": "sales_inquiry"}
+{"text": "I'm experienin some kinda problem with my smart home devices, they're just not connectin to the internet and I've tried restartin the router and everythin", "label": "technical_support"}
+{"text": "I've been noticing some discrepancies in my billing over the past few months, can you look into that for me and see what's going on?", "label": "billing_inquiry"}
+{"text": "I think there's something wrong with my router, because my internet's been dropping in and out all day", "label": "technical_support"}
+{"text": "I'm reviewing my latest statement and I see a charge for, like, $25 that I don't recognize, can you tell me what that's for?", "label": "billing_inquiry"}
+{"text": "Can you tell me what the cancellation policy is, I dont want to get stuck with a fee or something", "label": "cancel_service"}
+{"text": "I think I've been scammed, someone called me saying they were from your company and they needed my login info to fix an issue", "label": "fraud_report"}
+{"text": "I've been without service for a while now, can you give me an update on when it'll be restored, please", "label": "service_outage_status"}
+{"text": "So, I'm tryin to figure out if its a, you know, a maintenance thing or a actual outage, but my service is out, can you help me", "label": "service_outage_status"}
+{"text": "What's the, uh, policy on, like, bringing pets into your stores, my dog is really well-behaved", "label": "general_inquiry"}
+{"text": "I think someone's trying to steal my identity, I've been getting all these weird letters in the mail about accounts I never opened", "label": "fraud_report"}
+{"text": "I need help with a fraud issue, Ive been getting all these texts about suspicious activity, but when I try to call the number back, its never available", "label": "fraud_report"}
+{"text": "Um, hi, I think someone's accessed my account, I've been getting all these weird emails about account updates", "label": "fraud_report"}
+{"text": "I'm trying to understand why my bill is higher this month than it was last month, did I use more services or something?", "label": "billing_inquiry"}
+{"text": "Can you tell me about your, like, store amenities, do you guys have, uh, free Wi-Fi or something", "label": "general_inquiry"}
+{"text": "I need to cancel my service, it's just too expensive, you know?", "label": "cancel_service"}
+{"text": "I think I was overcharged for my service, can you review my account and see if there's been a mistake?", "label": "billing_inquiry"}
+{"text": "Can you tell me more about the different payment options you guys offer, like, do you have any discounts or anything", "label": "billing_inquiry"}
+{"text": "I'm trying to make a payment, but the website is saying my credit card is declined, I know I have enough money in my account though", "label": "billing_inquiry"}
+{"text": "I'm thinking about getting a new smartwatch, do you have any recommendations or promotions going on?", "label": "sales_inquiry"}
+{"text": "I think I've been scammed, someone called me saying they were from your company and they needed my account info to fix an issue", "label": "fraud_report"}
+{"text": "I'd like to cancel my service, but I'm not sure if I'll be able to get a refund for the equipment I bought, can you tell me about that?", "label": "cancel_service"}
+{"text": "Can you help me cancel my service and transfer my data to a different provider, I'd appreciate it", "label": "cancel_service"}
+{"text": "I'm just curious, do you guys have any, like, social media accounts, I want to, you know, follow you guys and stay up to date", "label": "general_inquiry"}
+{"text": "I just got a notification about a purchase I didnt authorize and Im pretty sure its fraud", "label": "fraud_report"}
+{"text": "Um, I was wondering if you guys have any bundles or packages that include multiple products or services?", "label": "sales_inquiry"}
+{"text": "I'm trying to, you know, manage my account settings but it's not letting me, can you help me figure out what's going on?", "label": "account_management"}
+{"text": "I saw a promo for a free accessory with the purchase of a new device, can you tell me more about that?", "label": "sales_inquiry"}
+{"text": "I think there might be somethin wrong with my modem, cuz my internet's been really slow lately, and I've tried troubleshootin it myself but nothin's workin", "label": "technical_support"}
+{"text": "I've been tryin to get some work done but my service keeps droppin, is it a known problem", "label": "service_outage_status"}
+{"text": "I just moved to a new apartment and my billing address is gonna be different, can you help me update that?", "label": "account_management"}
+{"text": "Can you help me downgrade to a plan that's more budget-friendly, I dont need all the bells and whistles", "label": "cancel_service"}
+{"text": "I'm tryin to use your app, but it's sayin my subscription's expired, and I'm pretty sure I've paid all my bills on time", "label": "technical_support"}
+{"text": "I've been tryin to get online for a while now, is there a known outage or maintenance goin on", "label": "service_outage_status"}
+{"text": "I'm interested in learning more about your company's latest, you know, technology advancements and how they can benefit me", "label": "sales_inquiry"}
+{"text": "I'm gonna cancel my service, I just dont need it no more, is that okay?", "label": "cancel_service"}
+{"text": "I forgot my password, can you, uh, reset it for me?", "label": "account_management"}
+{"text": "I think I might've messed up my wifi settings or somethin, cuz I'm not gettin any internet connection, and I've tried restartin my router and everythin, but nothin's workin", "label": "technical_support"}
+{"text": "I just got a notification about a charge on my account and I'm pretty sure it's not mine", "label": "fraud_report"}
+{"text": "Hi, Ive been noticing some weird activity on my account, like, multiple transactions in one day, and I dont recognize them", "label": "fraud_report"}
+{"text": "I need to add a new phone number to my account, is that something I can do online or do I need to call you guys?", "label": "account_management"}
+{"text": "So I've been with your company for a while now and I'm thinking about, you know, trying out some new services, can you recommend anything?", "label": "sales_inquiry"}
+{"text": "I've been with your company for a while now and I'm looking to, you know, explore some new services, can you recommend anything?", "label": "sales_inquiry"}
+{"text": "I'm not sure if it's related but, like, my neighbor's service is out too, is it a neighborhood thing", "label": "service_outage_status"}
+{"text": "I'm having some trouble with my device, it's just not turnin on and I've tried chargIN it and everythin", "label": "technical_support"}
+{"text": "I need to report a potential security issue, I just saw a charge for a product I've never bought before", "label": "fraud_report"}
+{"text": "Do you have any, like, air conditioning or heating in your stores, I'm gonna be shopping for a while", "label": "general_inquiry"}
+{"text": "I'm having some issues with my account and I think it's because my phone number is outdated, can you help me update it so I can, you know, get back in and manage my account?", "label": "account_management"}
+{"text": "What's the best way to, you know, get in touch with you guys, do you have like a contact form or something on your website?", "label": "general_inquiry"}
+{"text": "I've been trying to cut back on expenses and I think canceling my service is one of the things I need to do", "label": "cancel_service"}
+{"text": "I'm trying to cancel my service, but I don't want to get charged for another month, how does that work", "label": "billing_inquiry"}
+{"text": "I'm trying to make a payment, but the website is saying my account is inactive, what's going on with that?", "label": "billing_inquiry"}
+{"text": "I'm getting married soon and I wanna change my name on my account, how do I do that exactly?", "label": "account_management"}
+{"text": "I'm callin to ask about the status of the outage, I've been without service for a bit now and I'm gettin worried", "label": "service_outage_status"}
+{"text": "I'm looking for a, you know, fun and, like, unique way to, uh, spend the day, do you guys have any, like, scavenger hunts or games?", "label": "general_inquiry"}
+{"text": "I'm looking to upgrade my current device, can you tell me about your trade-in program and how it works?", "label": "sales_inquiry"}
+{"text": "I want to report a potential fraud issue, I just saw a charge on my account for a purchase I didn't make, and I don't know how to get it removed", "label": "fraud_report"}
+{"text": "I think Ive been scammed, someone called me saying they were from your security team and they needed my login info to, uh, secure my account", "label": "fraud_report"}
+{"text": "Do you have a, like, newsletter or something that I can sign up for to get updates on new stuff?", "label": "general_inquiry"}
+{"text": "I need to update my billing address, can I do that online or do I need to call you guys", "label": "billing_inquiry"}
+{"text": "How do I cancel my, my, service, I dont see an option on the website", "label": "cancel_service"}
+{"text": "I saw a promo for a free phone accessory with the purchase of a new device, can you tell me more about that?", "label": "sales_inquiry"}
+{"text": "Can you help me understand the different tiers of service and how they affect my billing, it's all kinda confusing to me", "label": "billing_inquiry"}

@@ -55,3 +55,6 @@ docker-compose.override.yaml
 # OS files
 .DS_Store
 Thumbs.db
+
+# Test scripts
+test_llm.py

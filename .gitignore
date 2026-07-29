@@ -58,3 +58,6 @@ Thumbs.db
 
 # Test scripts
 test_llm.py
+
+#Model Weights
+models/intent_classifier/

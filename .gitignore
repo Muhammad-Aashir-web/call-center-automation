@@ -64,4 +64,4 @@ test_intent_calibration.py
 models/intent_classifier/
 
 # ChromaDB persistence data (runtime-generated, not source)
-backend/data/
+backend/data/chroma/

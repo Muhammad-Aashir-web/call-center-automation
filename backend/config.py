@@ -8,6 +8,9 @@ class Settings(BaseSettings):
     GOOGLE_API_KEY: str
     OLLAMA_BASE_URL: str
     CHROMA_PERSIST_DIR: str
+    CHROMA_COLLECTION_NAME: str = "kb-articles"
+    INTENT_CONFIDENCE_THRESHOLD: float = 0.35
+    INTENT_MODEL_DIR: str = "../models/intent_classifier"
 
     model_config = SettingsConfigDict(env_file=".env")
 

@@ -55,3 +55,13 @@ docker-compose.override.yaml
 # OS files
 .DS_Store
 Thumbs.db
+
+# Test scripts
+test_llm.py
+test_intent_calibration.py
+
+#Model Weights
+models/intent_classifier/
+
+# ChromaDB persistence data (runtime-generated, not source)
+backend/data/chroma/

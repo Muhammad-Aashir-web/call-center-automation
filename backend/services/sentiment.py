@@ -96,14 +96,48 @@ class SentimentTracker:
 
         self._history.clear()
 
+    @staticmethod
+    def compute_features_from_history(history: list[float]) -> dict[str, float]:
+        """Compute sentiment features from a plain VADER history list.
+
+        LangGraph's CallState must stay a plain, JSON-serializable dict, so this
+        staticmethod lets graph node code compute the same trend features from a
+        plain list stored in state without needing a live SentimentTracker instance
+        to persist across node invocations.
+        """
+
+        try:
+            sentiment_current = float(history[-1]) if history else 0.0
+            sentiment_trend = SentimentTracker._compute_trend_from_history(history)
+            sentiment_min_so_far = float(min(history)) if history else 0.0
+
+            return {
+                "sentiment_current": sentiment_current,
+                "sentiment_trend": sentiment_trend,
+                "sentiment_min_so_far": sentiment_min_so_far,
+            }
+        except Exception:
+            logger.exception("Failed to compute sentiment features from history")
+            return {
+                "sentiment_current": 0.0,
+                "sentiment_trend": 0.0,
+                "sentiment_min_so_far": 0.0,
+            }
+
     def _compute_trend(self) -> float:
         """Compute the slope of the recent sentiment history using a degree-1 fit."""
 
-        if len(self._history) <= 1:
+        return self.compute_features_from_history(self._history)["sentiment_trend"]
+
+    @staticmethod
+    def _compute_trend_from_history(history: list[float]) -> float:
+        """Compute the slope of the recent sentiment history using a degree-1 fit."""
+
+        if len(history) <= 1:
             # A slope is not defined from a single point, so use neutral trend.
             return 0.0
 
-        recent_history = self._history[-self.TREND_WINDOW :]
+        recent_history = history[-SentimentTracker.TREND_WINDOW :]
         try:
             x_values = np.arange(len(recent_history), dtype=float)
             y_values = np.asarray(recent_history, dtype=float)

@@ -1,13 +1,13 @@
 """Reduced LangGraph call-flow orchestration for live call center assistance.
 
-This is the three-node foundation of the full seven-agent orchestration graph
-described in the project's technical spec. Additional nodes such as
-suggest_response, score_quality, and after_call_work will be added here in later
-phases once those agents exist. The graph is intended to be extended, not
-rebuilt.
+This is the foundation of the full seven-agent orchestration graph described in
+the project's technical spec. Additional nodes such as score_quality and
+after_call_work will be added here in later phases once those agents exist. The
+graph is intended to be extended, not rebuilt.
 """
 
 from __future__ import annotations
+
 
 import time
 import logging
@@ -19,6 +19,7 @@ from agents.escalation import escalation_predictor
 from agents.intent import intent_classifier
 from agents.knowledge import KnowledgeRetrievalAgent
 from services.sentiment import SentimentTracker
+from agents.suggestion import ResponseSuggestionAgent
 
 
 logger = logging.getLogger(__name__)
@@ -38,11 +39,13 @@ class CallState(TypedDict):
     intent_confidence: float | None
     low_confidence: bool | None
     kb_suggestions: list[dict]
+    suggested_response: dict[str, str] | None
     escalation_risk: float | None
     escalation_alert: bool | None
 
 
 knowledge_agent = KnowledgeRetrievalAgent()
+suggestion_agent = ResponseSuggestionAgent()
 
 
 def transcribe_node(state: CallState) -> dict[str, str | int | float | None]:
@@ -119,6 +122,31 @@ def retrieve_knowledge_node(state: CallState) -> dict[str, list[dict]]:
         return {"kb_suggestions": []}
 
 
+async def suggest_response_node(state: CallState) -> dict[str, dict[str, str]]:
+    """Generate a grounded response suggestion for the current transcript segment.
+
+    This node runs after retrieve_knowledge (not parallel to it), because
+    ResponseSuggestionAgent.suggest() requires kb_suggestions as a mandatory
+    argument -- it needs retrieval to have already completed for this segment.
+    """
+
+    try:
+        result = await suggestion_agent.suggest(
+            transcript=state.get("transcript", ""),
+            intent=state.get("intent"),
+            kb_suggestions=state.get("kb_suggestions", []),
+        )
+        return {"suggested_response": result}
+    except Exception:
+        logger.exception("Failed to generate response suggestion for transcript segment")
+        return {
+            "suggested_response": {
+                "suggested_response": "I'm looking into this for you now.",
+                "rationale": "Automated suggestion unavailable; showing a safe default.",
+            }
+        }
+
+
 def predict_escalation_node(state: CallState) -> dict[str, float | bool]:
     """Score escalation risk from the current intent and sentiment history."""
 
@@ -161,11 +189,13 @@ workflow = StateGraph(CallState)
 workflow.add_node("transcribe", transcribe_node)
 workflow.add_node("classify_intent", classify_intent_node)
 workflow.add_node("retrieve_knowledge", retrieve_knowledge_node)
+workflow.add_node("suggest_response", suggest_response_node)
 workflow.add_node("predict_escalation", predict_escalation_node)
 workflow.set_entry_point("transcribe")
 workflow.add_edge("transcribe", "classify_intent")
 workflow.add_edge("classify_intent", "retrieve_knowledge")
 workflow.add_edge("classify_intent", "predict_escalation")
-workflow.add_edge("retrieve_knowledge", END)
+workflow.add_edge("retrieve_knowledge", "suggest_response")
+workflow.add_edge("suggest_response", END)
 workflow.add_edge("predict_escalation", END)
 call_graph = workflow.compile()

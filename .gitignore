@@ -62,6 +62,7 @@ test_intent_calibration.py
 
 #Model Weights
 models/intent_classifier/
+models/escalation_classifier/
 
 # ChromaDB persistence data (runtime-generated, not source)
 backend/data/chroma/

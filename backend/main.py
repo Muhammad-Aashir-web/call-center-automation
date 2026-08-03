@@ -1,7 +1,7 @@
 import json
 import logging
 
-from fastapi import Depends, FastAPI, WebSocket, WebSocketDisconnect
+from fastapi import Depends, FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from redis import from_url
 from redis.asyncio import Redis
 from sqlalchemy import text
@@ -9,6 +9,7 @@ from sqlalchemy.orm import Session
 
 from config import settings
 from database import get_db
+from agents.quality import quality_agent
 from services.groq_client import transcribe_audio
 from workflows.call_flow import call_graph
 
@@ -77,6 +78,28 @@ def _call_update_payload(state: dict[str, object]) -> dict[str, object]:
         "escalation_risk": state.get("escalation_risk"),
         "escalation_alert": state.get("escalation_alert"),
     }
+
+
+@app.get("/calls/{call_id}/qa_score")
+async def get_qa_score(call_id: str):
+    state = await _load_call_state(call_id)
+    transcript = str(state.get("transcript") or "").strip()
+
+    if not transcript:
+        raise HTTPException(
+            status_code=404,
+            detail="No call found for this call_id, or the call has no transcript yet",
+        )
+
+    try:
+        result = await quality_agent.score_call(
+            transcript=transcript,
+            agent_id=settings.DEFAULT_AGENT_ID,
+        )
+        return result
+    except Exception:
+        logger.exception("QA scoring failed for call_id=%s", call_id)
+        raise HTTPException(status_code=500, detail="QA scoring failed")
 
 
 @app.get("/health")
@@ -148,10 +171,6 @@ async def websocket_call_endpoint(websocket: WebSocket, call_id: str):
                 }
             )
         except WebSocketDisconnect:
-            try:
-                await redis_client.delete(f"call_session:{call_id}")
-            except Exception:
-                logger.exception("Failed to delete call session state for %s", call_id)
             logger.info("Call WebSocket client disconnected for call_id=%s", call_id)
             break
         except Exception:

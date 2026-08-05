@@ -1,6 +1,7 @@
 import json
 import logging
 
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import Depends, FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from redis import from_url
 from redis.asyncio import Redis
@@ -15,6 +16,15 @@ from workflows.call_flow import call_graph
 
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("app")
 redis_client = Redis.from_url(settings.REDIS_URL, decode_responses=True)

@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     CHROMA_COLLECTION_NAME: str = "kb-articles"
     INTENT_CONFIDENCE_THRESHOLD: float = 0.35
     ESCALATION_ALERT_THRESHOLD: float = 0.4
+    DEFAULT_AGENT_ID: str = "demo-agent-001"
     INTENT_MODEL_DIR: str = "../models/intent_classifier"
 
     model_config = SettingsConfigDict(env_file=".env")

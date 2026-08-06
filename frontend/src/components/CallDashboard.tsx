@@ -32,6 +32,22 @@ interface QAScore {
     rationale: string
 }
 
+interface FollowUpTask {
+    description: string
+    priority: 'low' | 'medium' | 'high'
+    due_by: string
+}
+
+interface AfterCallSummary {
+    call_summary: string
+    resolution_status: 'resolved' | 'unresolved' | 'escalated' | 'unknown'
+    commitments: string[]
+    compliance_notes: string[]
+    follow_up_tasks: FollowUpTask[]
+    requires_human_review: boolean
+    review_reason: string | null
+}
+
 const RUBRIC_DIMENSIONS = ['greeting', 'active_listening', 'compliance', 'resolution', 'tone', 'closing']
 
 function riskColor(risk: number | null): { bar: string; text: string; label: string } {
@@ -53,6 +69,30 @@ function formatDimensionLabel(key: string): string {
         .replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
+function resolutionStatusStyle(status: AfterCallSummary['resolution_status']): string {
+    switch (status) {
+        case 'resolved':
+            return 'bg-emerald-100 text-emerald-800'
+        case 'unresolved':
+            return 'bg-amber-100 text-amber-800'
+        case 'escalated':
+            return 'bg-red-100 text-red-800'
+        default:
+            return 'bg-slate-100 text-slate-600'
+    }
+}
+
+function priorityStyle(priority: FollowUpTask['priority']): string {
+    switch (priority) {
+        case 'high':
+            return 'bg-red-100 text-red-700'
+        case 'medium':
+            return 'bg-amber-100 text-amber-700'
+        default:
+            return 'bg-slate-100 text-slate-600'
+    }
+}
+
 function CallDashboard() {
     const [callId, setCallId] = useState<string | null>(null)
     const [isRecording, setIsRecording] = useState(false)
@@ -63,6 +103,10 @@ function CallDashboard() {
     const [qaScore, setQaScore] = useState<QAScore | null>(null)
     const [qaLoading, setQaLoading] = useState(false)
     const [qaError, setQaError] = useState<string | null>(null)
+
+    const [summary, setSummary] = useState<AfterCallSummary | null>(null)
+    const [summaryLoading, setSummaryLoading] = useState(false)
+    const [summaryError, setSummaryError] = useState<string | null>(null)
 
     const isRecordingRef = useRef(false)
     const streamRef = useRef<MediaStream | null>(null)
@@ -84,6 +128,8 @@ function CallDashboard() {
             setUpdate(null)
             setQaScore(null)
             setQaError(null)
+            setSummary(null)
+            setSummaryError(null)
 
             const newCallId = crypto.randomUUID()
             setCallId(newCallId)
@@ -196,10 +242,36 @@ function CallDashboard() {
         }
     }
 
+    const fetchSummary = async () => {
+        if (!callId) return
+        setSummaryLoading(true)
+        setSummaryError(null)
+        try {
+            const response = await fetch(`http://localhost:8000/calls/${callId}/after_call_summary`)
+
+            if (response.status === 404) {
+                setSummaryError('No transcript found for this call yet.')
+                return
+            }
+            if (!response.ok) {
+                setSummaryError('Failed to generate the call summary. Please try again.')
+                return
+            }
+
+            const data = (await response.json()) as AfterCallSummary
+            setSummary(data)
+        } catch (err) {
+            console.error('Failed to fetch after-call summary', err)
+            setSummaryError('Could not reach the after-call work service.')
+        } finally {
+            setSummaryLoading(false)
+        }
+    }
+
     const risk = riskColor(update?.escalation_risk ?? null)
     const riskPercent = Math.round((update?.escalation_risk ?? 0) * 100)
 
-    const showQaSection = callId !== null && !isRecording
+    const showPostCallSections = callId !== null && !isRecording
 
     return (
         <div className="mx-auto w-full max-w-6xl space-y-4 px-4 py-8">
@@ -344,7 +416,7 @@ function CallDashboard() {
             </div>
 
             {/* QA score section — appears once a call has ended */}
-            {showQaSection && (
+            {showPostCallSections && (
                 <div className="rounded-2xl border border-slate-200 bg-white p-5">
                     <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                         <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
@@ -430,6 +502,133 @@ function CallDashboard() {
                                     {qaScore.rationale}
                                 </p>
                             </div>
+                        </div>
+                    )}
+                </div>
+            )}
+
+            {/* After-call summary section — appears once a call has ended */}
+            {showPostCallSections && (
+                <div className="rounded-2xl border border-slate-200 bg-white p-5">
+                    <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
+                        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+                            After-Call Summary
+                        </h2>
+                        <button
+                            type="button"
+                            onClick={fetchSummary}
+                            disabled={summaryLoading}
+                            className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-500 disabled:cursor-not-allowed disabled:bg-slate-300"
+                        >
+                            {summaryLoading ? 'Summarizing…' : summary ? 'Regenerate Summary' : 'Get Call Summary'}
+                        </button>
+                    </div>
+
+                    {summaryError && (
+                        <p className="text-sm text-red-600">{summaryError}</p>
+                    )}
+
+                    {!summary && !summaryLoading && !summaryError && (
+                        <p className="text-sm text-slate-400">
+                            Call ended. Click "Get Call Summary" to generate a summary, CRM update, and follow-up tasks.
+                        </p>
+                    )}
+
+                    {summary && (
+                        <div className="space-y-5">
+                            <div className="flex flex-wrap items-center gap-3">
+                                <span
+                                    className={`rounded-full px-3 py-1 text-xs font-medium capitalize ${resolutionStatusStyle(
+                                        summary.resolution_status
+                                    )}`}
+                                >
+                                    {summary.resolution_status}
+                                </span>
+                                {summary.requires_human_review && (
+                                    <span className="rounded-full bg-red-100 px-3 py-1 text-xs font-medium text-red-800">
+                                        Flagged for human review
+                                    </span>
+                                )}
+                            </div>
+
+                            <div>
+                                <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                                    Call Summary
+                                </h3>
+                                <p className="rounded-lg bg-slate-50 p-4 text-sm leading-relaxed text-slate-700">
+                                    {summary.call_summary || 'No summary could be generated for this call.'}
+                                </p>
+                            </div>
+
+                            {summary.requires_human_review && summary.review_reason && (
+                                <p className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">
+                                    {summary.review_reason}
+                                </p>
+                            )}
+
+                            {summary.commitments.length > 0 && (
+                                <div>
+                                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                                        Commitments Made
+                                    </h3>
+                                    <ul className="space-y-1.5">
+                                        {summary.commitments.map((item, idx) => (
+                                            <li
+                                                key={idx}
+                                                className="rounded-lg bg-indigo-50 px-3 py-2 text-xs text-indigo-800"
+                                            >
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {summary.compliance_notes.length > 0 && (
+                                <div>
+                                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                                        Compliance Notes
+                                    </h3>
+                                    <ul className="space-y-1.5">
+                                        {summary.compliance_notes.map((item, idx) => (
+                                            <li
+                                                key={idx}
+                                                className="rounded-lg bg-amber-50 px-3 py-2 text-xs text-amber-800"
+                                            >
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
+
+                            {summary.follow_up_tasks.length > 0 && (
+                                <div>
+                                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                                        Follow-Up Tasks
+                                    </h3>
+                                    <ul className="space-y-2">
+                                        {summary.follow_up_tasks.map((task, idx) => (
+                                            <li
+                                                key={idx}
+                                                className="flex items-center justify-between rounded-lg border border-slate-100 px-3 py-2 text-sm"
+                                            >
+                                                <div>
+                                                    <p className="text-slate-700">{task.description}</p>
+                                                    <p className="mt-0.5 text-xs text-slate-400">Due {task.due_by}</p>
+                                                </div>
+                                                <span
+                                                    className={`ml-3 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide ${priorityStyle(
+                                                        task.priority
+                                                    )}`}
+                                                >
+                                                    {task.priority}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </div>
                     )}
                 </div>

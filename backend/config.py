@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     INTENT_CONFIDENCE_THRESHOLD: float = 0.35
     ESCALATION_ALERT_THRESHOLD: float = 0.4
     DEFAULT_AGENT_ID: str = "demo-agent-001"
+    N8N_WEBHOOK_URL: str = "http://localhost:5678/webhook/after-call-summary"
     INTENT_MODEL_DIR: str = "../models/intent_classifier"
 
     model_config = SettingsConfigDict(env_file=".env")

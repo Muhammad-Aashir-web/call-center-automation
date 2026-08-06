@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import logging
 
+from services.llm_utils import strip_json_fences
 from services.llm import llm_client
 
 
@@ -40,7 +41,7 @@ class QualityAssuranceAgent:
             )
 
             try:
-                parsed = json.loads(_strip_json_fences(raw_output))
+                parsed = json.loads(strip_json_fences(raw_output))
                 if not isinstance(parsed, dict):
                     raise ValueError("LLM response was not a JSON object")
 
@@ -104,20 +105,6 @@ class QualityAssuranceAgent:
             "transcript by name — not a general impression of the call's quality.\n\n"
             f"Transcript:\n{transcript}"
         )
-
-
-def _strip_json_fences(text: str) -> str:
-    """Remove optional markdown JSON code fences from an LLM response."""
-
-    cleaned = text.strip()
-    if cleaned.startswith("```"):
-        cleaned = cleaned.removeprefix("```json").removeprefix("```")
-        cleaned = cleaned.strip()
-        if cleaned.endswith("```"):
-            cleaned = cleaned[: -3].strip()
-    return cleaned
-
-
 def _fallback_quality_assessment(agent_id: str) -> dict:
     """Return a safe default QA assessment when scoring is unavailable."""
 

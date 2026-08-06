@@ -1,6 +1,7 @@
 import json
 import logging
 
+import httpx
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import Depends, FastAPI, HTTPException, WebSocket, WebSocketDisconnect
 from redis import from_url
@@ -10,6 +11,7 @@ from sqlalchemy.orm import Session
 
 from config import settings
 from database import get_db
+from agents.after_call import after_call_agent
 from agents.quality import quality_agent
 from services.groq_client import transcribe_audio
 from workflows.call_flow import call_graph
@@ -106,10 +108,74 @@ async def get_qa_score(call_id: str):
             transcript=transcript,
             agent_id=settings.DEFAULT_AGENT_ID,
         )
+        await redis_client.set(f"qa_score:{call_id}", json.dumps(result), ex=3600)
         return result
     except Exception:
         logger.exception("QA scoring failed for call_id=%s", call_id)
         raise HTTPException(status_code=500, detail="QA scoring failed")
+
+
+@app.get("/calls/{call_id}/after_call_summary")
+async def get_after_call_summary(call_id: str):
+    state = await _load_call_state(call_id)
+    transcript = str(state.get("transcript") or "").strip()
+
+    if not transcript:
+        raise HTTPException(
+            status_code=404,
+            detail="No call found for this call_id, or the call has no transcript yet",
+        )
+
+    qa_score_dict: dict | None = None
+
+    try:
+        cached_qa_score = await redis_client.get(f"qa_score:{call_id}")
+        if cached_qa_score:
+            try:
+                parsed_qa_score = json.loads(cached_qa_score)
+                if not isinstance(parsed_qa_score, dict):
+                    raise ValueError("Cached QA score must be a JSON object")
+                qa_score_dict = parsed_qa_score
+            except Exception:
+                logger.exception("Failed to decode cached QA score for call_id=%s", call_id)
+
+        if qa_score_dict is None:
+            try:
+                fresh_qa_score = await quality_agent.score_call(
+                    transcript=transcript,
+                    agent_id=settings.DEFAULT_AGENT_ID,
+                )
+                qa_score_dict = fresh_qa_score
+                await redis_client.set(f"qa_score:{call_id}", json.dumps(fresh_qa_score), ex=3600)
+            except Exception:
+                logger.warning(
+                    "QA score unavailable for call_id=%s; generating after-call summary without QA context",
+                    call_id,
+                )
+                qa_score_dict = None
+
+        try:
+            summary = await after_call_agent.generate_summary(
+                transcript=transcript,
+                qa_score=qa_score_dict,
+                agent_id=settings.DEFAULT_AGENT_ID,
+            )
+        except Exception:
+            logger.exception("After-call summary generation failed for call_id=%s", call_id)
+            raise HTTPException(status_code=500, detail="After-call summary failed")
+
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                await client.post(settings.N8N_WEBHOOK_URL, json=summary.model_dump())
+        except Exception:
+            logger.warning("n8n webhook delivery failed for call_id=%s", call_id)
+
+        return summary
+    except HTTPException:
+        raise
+    except Exception:
+        logger.exception("After-call summary failed for call_id=%s", call_id)
+        raise HTTPException(status_code=500, detail="After-call summary failed")
 
 
 @app.get("/health")
